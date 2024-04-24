@@ -1,0 +1,31 @@
+body, html {
+    height: 100%;
+  }
+  
+  .page {
+    background-image: url("../images/page.jpg");    
+    height: 100%;      
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /*Styling Quiz Header*/
+  .title{
+    float:left;
+    margin-left: 500px;
+    background-color: bisque;
+    color:#0C3D40;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+
+  /* Styling nav elements */
+  .nav {
+    float: right;
+    margin-top: 52px;
+    margin-right: 50px;
+    font-family: 'karma', sans-serif;
+    color: #0C3D40;    
+  }
+
