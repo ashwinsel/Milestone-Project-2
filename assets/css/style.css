@@ -14,6 +14,7 @@ body, html {
   .title{
     float:left;
     margin-left: 500px;
+    margin-top: 50px;
     background-color: bisque;
     color:#0C3D40;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -21,7 +22,7 @@ body, html {
   }
 
   /* Styling nav elements */
-  .nav {
+  .menu-items {
     float: right;
     margin-top: 52px;
     margin-right: 50px;
@@ -29,3 +30,40 @@ body, html {
     color: #0C3D40;    
   }
 
+/**Stylize Quiz box**/
+.container {
+   height: 37.5rem;
+   border: #000000;
+   background-color: #0C3D40;
+   width: 80%;
+   margin: 0 auto;
+   overflow: hidden;
+   position: relative;
+}
+
+#question {
+   color: #000000;
+   text-align: center;
+   text-shadow: 1px 1px #ffffff;
+   -webkit-text-decoration: #900a0a;
+   text-decoration: #900a0a;
+   padding: 4rem;
+   background-color: rgba(243, 184, 142, 0.4);
+   border-radius: 80px;
+   border: 2px solid #ea070b;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+}
+
+#text-in-hero p {
+   color: #0b0b0b;
+   text-align: center;
+   text-shadow: 1px 1px #f20707;
+   -webkit-text-decoration: #900a0a;
+   text-decoration: #900a0a;
+   font-size: 150%;
+}
