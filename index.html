@@ -24,6 +24,24 @@
             <ul class="menu-items">
                <li class="list-inline-item">
                   <button class="how-to">How to Play</button>
+                  <div class="how-to-modal" id="instructions-modal">
+                     <div class="modal1-top">
+                        <button class="modal1-close">&times;</button>
+                     </div>
+                     <div class="instructions">
+                        <ol>
+                           <li>
+                              <p>Read the question carefully</p>
+                           </li>
+                           <li>
+                              <p>click on the box that represents your answer</p>
+                           </li>
+                           <li>
+                              <p>click next</p>
+                           </li>
+                        </ol>
+                     </div>
+                  </div>
                </li>
                <li class="list-inline-item">
                   <button class="settin">Settings</button>
@@ -38,18 +56,32 @@
          </nav>
     </header>
    
-    <main>
+    <main class="container">
       
-         <div class="container">
-            <div id="question">
-               <div class="container-fluid">
-                 <p>test </p>
-                </div>
-               
-            </div>
+         
+   <div class="container-fluid ">
+      <div class="row justify-content-center ">
+         <div class="col-xs-12 col-md-6 m-2 question-box">
+            <p class= "text-center mt-lg-2">Questions</p>
          </div>
+      </div>
+   </div>
+ 
+   <div class="container-fluid mt-lg-3 mt-md-3">
+      <div class="row justify-content-center">
+         <div class="col-md-3 col-xs-6 pt-lg-2 text-center answer-boxes" id="option-1"></div>
+         <div class="col-md-3 col-xs-6 pt-lg-2 text-center answer-boxes" id="option-2"></div>
+      </div>
+      <div class="row justify-content-center">
+         <div class="col-md-3 col-xs-6 pt-lg-2 text-center answer-boxes" id="option-3"></div>
+         <div class="col-md-3 col-xs-6 pt-lg-2 text-center answer-boxes" id="option-4"></div>
+      </div>
+      <div class="row justify-content-center">
+         <div class="col-md-1 text-center">Next</div>
+      </div>
+   </div>
       
-    </main>
+   </main>
     <footer>
         
     </footer>

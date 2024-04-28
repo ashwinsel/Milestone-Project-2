@@ -14,56 +14,164 @@ body, html {
   .title{
     float:left;
     margin-left: 500px;
-    margin-top: 50px;
-    background-color: bisque;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    background-color: rgba(255, 228, 196, 0.5);
     color:#0C3D40;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
 
   }
 
-  /* Styling nav elements */
+  /* Styling menu elements */
   .menu-items {
     float: right;
-    margin-top: 52px;
+    margin-top: 55px;
     margin-right: 50px;
     font-family: 'karma', sans-serif;
     color: #0C3D40;    
   }
 
 /**Stylize Quiz box**/
-.container {
-   height: 37.5rem;
+main.container {
+   height: 27.5rem;
    border: #000000;
-   background-color: #0C3D40;
    width: 80%;
-   margin: 0 auto;
    overflow: hidden;
    position: relative;
+   padding: 42px;
 }
 
-#question {
-   color: #000000;
-   text-align: center;
-   text-shadow: 1px 1px #ffffff;
-   -webkit-text-decoration: #900a0a;
-   text-decoration: #900a0a;
-   padding: 4rem;
-   background-color: rgba(243, 184, 142, 0.4);
-   border-radius: 80px;
-   border: 2px solid #ea070b;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   -webkit-transform: translate(-50%, -50%);
-   -ms-transform: translate(-50%, -50%);
-   transform: translate(-50%, -50%);
+.question-box {
+  background-color: rgba(248, 216, 100, 0.8);
+  color: rgb(4, 4, 4);
+  height: 10vh;
+  border: 0.5px solid #800707;
+  border-radius: 6px;
 }
 
-#text-in-hero p {
-   color: #0b0b0b;
-   text-align: center;
-   text-shadow: 1px 1px #f20707;
-   -webkit-text-decoration: #900a0a;
-   text-decoration: #900a0a;
-   font-size: 150%;
+div.col-xs-12.col-md-6.m-2.question-panel {
+  width: 100%;
+  
+}
+
+.answer-boxes
+  {
+     background-color: rgba(248, 216, 100, 0.8);
+     color: rgb(19, 21, 22);
+     font-size:20px;
+     margin: 0px 10px;
+     margin-bottom: 10px;
+     height:8vh;
+     border: 0.5px solid #800707;
+     border-radius: 6px;
+   }
+  
+
+
+
+
+
+
+
+
+
+/* Styling for responsive UX */
+
+/* For larger to medium screens size from 1300px wide and down */
+@media screen and (max-width: 1300px) {
+
+  /* contact.html page */
+ 
+.container {
+  width: 60%;
+  }
+}
+/* For small screen sizes from 768px wide and down */
+@media screen and (max-width: 768px) {
+
+  /* index.html page */
+
+
+  /* conatc.html page */
+  
+  .container {
+     width: 22.875rem;
+     height: -webkit-fit-content;
+     height: -moz-fit-content;
+     height: fit-content;
+  }
+
+  /* gallery.html page */
+
+ 
+
+
+
+  /* contact.html page */
+
+  .container {
+     width: 63%;
+     height: 95%;
+  }
+
+}
+
+
+/* For very small screen sizes from 450px wide and down */
+@media screen and (max-width: 450px) {
+  /* index.html page */
+
+  .container {
+     font-size: 236%;
+     margin-left: 25px;
+     margin-bottom: -3.5rem;
+
+  }
+
+
+  /* gallery.html page */
+
+  .container {
+     font-size: 1.6em;
+     color: #000000;
+     text-shadow: 1px 1px 1px #000000;
+     font-weight: 500;
+     padding-bottom: 10px;
+     border-bottom: 2px solid #800707;
+     padding-top: 10px;
+     background-color: rgba(243, 184, 142, 0.8);
+     border-radius: 10px;
+     border: 2px solid #ea070b;
+     text-align: center;
+
+  }
+
+  /* events.html page */
+  .container {
+     max-width: 20px;
+     height: 0px;
+  }
+
+  /* contact.html page */
+
+  .container {
+     width: 97%;
+     height: 93%;
+  }
+
+
+}
+
+/* For very small screen */
+@media screen and (max-width: 320px) {
+
+  /* contact.html page */
+
+  .container {
+     width: 96%;
+     height: 109%;
+
+  }
+
 }
