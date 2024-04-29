@@ -20,8 +20,52 @@ body, html {
     color:#0C3D40;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 700;
+    
 
   }
+
+  /* Styling Modal buttons */
+  .modal {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    z-index: 10;
+    top: 10%;
+    left: 50%;  
+    height: 50%;
+    width: 50%;
+    max-width: 70%;
+    overflow: auto;
+    border: 0.5px solid #800707;
+    border-radius: 6px;
+    font-size: xx-large;
+    padding-left: 5%;
+  }
+
+  button.btn {
+    color:#ea070b;
+  }
+
+  /* adding class to strike through when music is off */
+  button.btn.strike {
+    text-decoration: line-through;
+  }
+  
+  .close {
+    color: #ffffff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
   /* Styling menu elements */
   .menu-items {
@@ -29,12 +73,13 @@ body, html {
     margin-top: 55px;
     margin-right: 50px;
     font-family: 'karma', sans-serif;
-    color: #0C3D40;    
+    color: #f9fbfb;  
+    background-color: #0C3D40;  
   }
 
 /**Stylize Quiz box**/
 main.container {
-   height: 27.5rem;
+   height: 100%;
    border: #000000;
    width: 80%;
    overflow: hidden;

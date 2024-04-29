@@ -11,80 +11,85 @@
      <link rel="stylesheet" href="./assets/css/style.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+     
     <title>Document</title>
 </head>
 <body>
    <div class="page">
-    <header>
-        <h1 class="title">
-            Hindu Mythology Quiz
-        </h1>
-        <nav>
+      <header>
+         <h1 class="title">
+               Hindu Mythology Quiz
+         </h1>
+         <!--Menu Items Modal Button-->
+         
             <ul class="menu-items">
                <li class="list-inline-item">
-                  <button class="how-to">How to Play</button>
-                  <div class="how-to-modal" id="instructions-modal">
-                     <div class="modal1-top">
-                        <button class="modal1-close">&times;</button>
-                     </div>
-                     <div class="instructions">
-                        <ol>
-                           <li>
-                              <p>Read the question carefully</p>
-                           </li>
-                           <li>
-                              <p>click on the box that represents your answer</p>
-                           </li>
-                           <li>
-                              <p>click next</p>
-                           </li>
-                        </ol>
-                     </div>
-                  </div>
+                  <!-- Button 1 -->
+                  <button class="btn">How to Play</button>                  
                </li>
                <li class="list-inline-item">
-                  <button class="settin">Settings</button>
+                  <!-- Button 2 -->
+                  <button class="btn">Music Toggle</button>
                </li>
                <li class="list-inline-item">
-                  <button class="reset">Reset</button>
-               </li>
-               <li class="list-inline-item">
-                  <button class="suj">Suggestions</button>
-               </li>
+                  <!-- Button 3 -->
+                  <button class="btn">Reset Game</button>
+               </li>               
             </ul>
-         </nav>
-    </header>
-   
-    <main class="container">
-      
+         <!-- The Modals -->
+<div id="instructions" class="modal">
+   <div class="htp-instructions">
+       <span class="close">close</span>
+       <p>This is modal 1 content.</p>
+   </div>
+</div>
+
+<div id="musicOnOff" class="modal">
+   <div class="modal-content">
+       <span class="close">&times;</span>
+       <p>This is modal 2 content.</p>
+   </div>
+</div>
+<div id="gameReset" class="modal">
+   <div class="modal-content">
+       <span class="close">&times;</span>
+       <p>This is modal 3 content.</p>
+   </div>
+</div>
+
          
-   <div class="container-fluid ">
-      <div class="row justify-content-center ">
-         <div class="col-xs-12 col-md-6 m-2 question-box">
-            <p class= "text-center mt-lg-2">Questions</p>
+      </header>  
+
+     
+      <main class="container">
+         <!----Question Box-->
+         <div class="container-fluid ">
+            <div class="row justify-content-center ">
+               <div class="col-xs-12 col-md-6 m-2 question-box">
+                  <p class= "text-center mt-lg-2">Questions</p>
+               </div>
+            </div>
          </div>
-      </div>
-   </div>
- 
-   <div class="container-fluid mt-lg-3 mt-md-3">
-      <div class="row justify-content-center">
-         <div class="col-md-3 col-xs-6 pt-lg-2 text-center answer-boxes" id="option-1"></div>
-         <div class="col-md-3 col-xs-6 pt-lg-2 text-center answer-boxes" id="option-2"></div>
-      </div>
-      <div class="row justify-content-center">
-         <div class="col-md-3 col-xs-6 pt-lg-2 text-center answer-boxes" id="option-3"></div>
-         <div class="col-md-3 col-xs-6 pt-lg-2 text-center answer-boxes" id="option-4"></div>
-      </div>
-      <div class="row justify-content-center">
-         <div class="col-md-1 text-center">Next</div>
-      </div>
-   </div>
-      
-   </main>
-    <footer>
-        
-    </footer>
+         <!---- Answer Option Boxes-->
+         <div class="container-fluid mt-lg-3 mt-md-3">
+            <div class="row justify-content-center">
+               <div class="col-md-3 col-xs-6 pt-lg-2 text-center answer-boxes" id="option-1"></div>
+               <div class="col-md-3 col-xs-6 pt-lg-2 text-center answer-boxes" id="option-2"></div>
+            </div>
+            <div class="row justify-content-center">
+               <div class="col-md-3 col-xs-6 pt-lg-2 text-center answer-boxes" id="option-3"></div>
+               <div class="col-md-3 col-xs-6 pt-lg-2 text-center answer-boxes" id="option-4"></div>
+            </div>
+            <div class="row justify-content-center">
+               <div class="col-md-1 text-center">Next</div>
+            </div>
+         </div>
+         
+      </main>
+      <footer>
+         
+      </footer>
    </div> 
+   <script src="./assets/js/script.js"></script>
 </body>
 </html>
