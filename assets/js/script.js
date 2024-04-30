@@ -6,7 +6,7 @@ const musicToggle = document.getElementById("toggleMusic");
 const resetButton = document.querySelector(".btn-reset");
 
 
-// Play the audio when the page loads
+// Play the audio when the user clicks on Music Toggle button
 musicToggle.addEventListener("click", function() {
     if (music.paused) {
       // If the music is paused, start playing
@@ -14,12 +14,12 @@ musicToggle.addEventListener("click", function() {
         console.error("Failed to play music:", error);
       });
       // Change the button text to indicate pausing
-      musicToggle.textContent = "Pause Music";
+      musicToggle.textContent = "Music On";
     } else {
       // If the music is playing, pause it
       music.pause();
       // Change the button text to indicate resuming
-      musicToggle.textContent = "Play Music";
+      musicToggle.textContent = "Music Off";
     }
   });
 
