@@ -191,6 +191,7 @@ function startQuiz() {
 function showQuestion() {
 
     let questionDisplayed = question[currentQuestionCounter];
+    console.log(currentQuestionCounter);
     let questionNumber = currentQuestionCounter + 1;
     questions.innerHTML = questionNumber + ". " + questionDisplayed.question;
 
@@ -198,17 +199,25 @@ function showQuestion() {
         document.getElementById("option" + (i + 1)).innerHTML = answer.ans;
     });
 
-    // Remove any previous styling
+    // Remove any background-color already applied
     for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].classList.remove("green", "red");
     }
-}
 
-startQuiz();
+    for (let i = 1; i <= answerButtons.length; i++) {
+        var buttonId = "option" + [i];
+        console.log(buttonId);
+        let x = document.getElementById(buttonId);
+        x.style.pointerEvents = "";
+        
+    }
+    console.log(currentQuestionCounter);
+}
 
 function enterAnswer(evt) {
     let clicked = evt.target.innerHTML;
-    console.log(clicked);
+    console.log("Clicked:", clicked);
+    
 
     // Find the corresponding question object
     const questionObj = question[currentQuestionCounter];
@@ -225,13 +234,23 @@ function enterAnswer(evt) {
     }
 
     // Disable answer buttons after selection
-    for (let i = 0; i < answerButtons.length; i++) {
-        answerButtons[i].disabled = true;
+    
+    for (let i = 1; i <= answerButtons.length; i++) {
+        var buttonId = "option" + [i];
+        console.log(buttonId);
+        let x = document.getElementById(buttonId);
+        x.style.pointerEvents = "none";
+        
     }
+    
 
     // Show next button
     nextButton.style.display = "block";
 }
+
+startQuiz();
+
+
 
 function nextQuestion() {
     // Move to the next question
