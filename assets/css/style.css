@@ -131,6 +131,7 @@ p.ans{
      border: 0.5px solid #800707;
      border-radius: 6px;
      text-align: center;
+     cursor: pointer;
    }
 
    .green {
@@ -143,10 +144,7 @@ p.ans{
 
    
 
-   .ans:hover {
-      background-color: #dedbdb;
-
-   }
+   
   
    #next {
      background-color: rgba(248, 216, 100, 0.8);

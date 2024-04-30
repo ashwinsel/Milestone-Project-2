@@ -174,64 +174,6 @@ const question = [{
 
 ]
 
-/*const questions = document.getElementById("question");
-const answerButtons = document.getElementsByClassName("ans");
-const nextButton = document.getElementById("next");
-
-let currentQuestionCounter = 0;
-let score = 0;
-
-function startQuiz(){
-    currentQuestionCounter = 0;
-    score = 0;
-    nextButton.innerHTML = "Next";
-    showQuestion();
-}
-
- question.forEach((q) => {
-    console.log("Question:", q.question);
-    q.answers.forEach((a) => {
-        console.log("Answer:", a.ans);
-    });
-});
-
-function showQuestion() {
-    
-    let questionDisplayed = question[currentQuestionCounter];
-    let questionNumber = currentQuestionCounter + 1;
-    questions.innerHTML = questionNumber + ". " + questionDisplayed.question;
-
-    questionDisplayed.answers.forEach((answer, i) => {
-        document.getElementById("option" + (i + 1)).innerHTML = answer.ans;
-    });
-}
-
-startQuiz()
-
-/*function enterAnswer(evt) {
-   let clicked = evt.target.innerHTML;
-  console.log(clicked);
-
-}*/
-
-/*function enterAnswer(evt) {
-    let clicked = evt.target.innerHTML;
-    console.log(clicked);
-
-    // Find the corresponding question object
-    const questionObj = question.find((q) => q.question === questionDisplayed.question);
-
-    // Find the corresponding answer object
-    const answerObj = questionObj.answers.find((a) => a.ans === clicked);
-
-    // Add classes based on the result
-    if (answerObj.result === true) {
-        evt.target.classList.add("green");
-    } else {
-        evt.target.classList.add("red");
-    }
-}*/
-
 const questions = document.getElementById("question");
 const answerButtons = document.getElementsByClassName("ans");
 const nextButton = document.getElementById("next");
