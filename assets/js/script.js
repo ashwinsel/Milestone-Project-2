@@ -242,6 +242,9 @@ function startQuiz() {
 }
 
 function showQuestion() {
+
+    const randomQuestion = randomiseQuestions();
+
     let questionDisplayed = question[currentQuestionCounter];
     let questionNumber = currentQuestionCounter + 1;
     questions.innerHTML = questionNumber + ". " + questionDisplayed.question;
@@ -331,3 +334,10 @@ function resetGame() {
 
 // Event listener for the reset button
 resetButton.addEventListener("click", resetGame);
+
+//Randomising the questions that appear to improve UX
+
+function randomiseQuestions() {
+    const getRandomNumber = Math.floor(Math.random() * question.length);
+    return question[getRandomNumber];
+}
