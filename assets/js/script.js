@@ -1,7 +1,27 @@
 // Get the modals
 var howToPlay = document.getElementById("instructions");
-var musicToggle = document.getElementById("musicOnOff");
-var resetGame = document.getElementById("gameReset");
+var musicToggle12 = document.getElementById("musicOnOff");
+const music = document.getElementById("music");
+const musicToggle = document.getElementById("toggleMusic");
+const resetButton = document.querySelector(".btn-reset");
+
+
+// Play the audio when the page loads
+musicToggle.addEventListener("click", function() {
+    if (music.paused) {
+      // If the music is paused, start playing
+      music.play().catch(error => {
+        console.error("Failed to play music:", error);
+      });
+      // Change the button text to indicate pausing
+      musicToggle.textContent = "Pause Music";
+    } else {
+      // If the music is playing, pause it
+      music.pause();
+      // Change the button text to indicate resuming
+      musicToggle.textContent = "Play Music";
+    }
+  });
 
 // Get the buttons that open the modals
 var htp = document.querySelectorAll(".btn")[0];
@@ -15,25 +35,16 @@ var spans = document.querySelectorAll(".close");
 htp.onclick = function() {
     howToPlay.style.display = "block";
 }
-mT.onclick = function() {
-    mT.classList.add("strike");
-} 
+ 
 rG.onclick = function() {
-    resetGame.style.display = "block";
+    resetGameButton.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modals
 for (var i = 0; i < spans.length; i++) {
     spans[i].onclick = function() {
         howToPlay.style.display = "none";
-        if((document.querySelectorAll == 'btn.strike')[i] === 'button.btn.strike') {
-            mT.onclick = function() {
-                mT.classList.remove("strike");
-            }; /*how to target if Music toggle button is striked through? */
-
-        };
-
-        resetGame.style.display = "none";
+        resetGameButton.style.display = "none";
     }
 }
 // When the user clicks anywhere outside of the modals, close them
@@ -43,6 +54,23 @@ window.onclick = function(event) {
     }
 }
 
+function resetGame() {
+    // Reset current question counter and score
+    currentQuestionCounter = 0;
+    score = 0;
+
+    // Show the first question
+    showQuestion();
+
+    // Remove any previous styling and enable answer buttons
+    for (let i = 0; i < answerButtons.length; i++) {
+        answerButtons[i].classList.remove("green", "red");
+        answerButtons[i].disabled = false;
+    }
+
+    // Hide the next button
+    nextButton.style.display = "none";
+}
 
 // the quiz script
 
@@ -141,7 +169,7 @@ const question = [{
 
 ]
 
-const questions = document.getElementById("question");
+/*const questions = document.getElementById("question");
 const answerButtons = document.getElementsByClassName("ans");
 const nextButton = document.getElementById("next");
 
@@ -155,24 +183,151 @@ function startQuiz(){
     showQuestion();
 }
 
+ question.forEach((q) => {
+    console.log("Question:", q.question);
+    q.answers.forEach((a) => {
+        console.log("Answer:", a.ans);
+    });
+});
+
 function showQuestion() {
     
     let questionDisplayed = question[currentQuestionCounter];
     let questionNumber = currentQuestionCounter + 1;
     questions.innerHTML = questionNumber + ". " + questionDisplayed.question;
 
-    questionDisplayed.answers.forEach(answer => {
-        const button = document.createElement("button");
-        button.innerHTML = answer.text;
-        button.classList.add("ans");
-        answerButtons.appendChild(answerBoxes);
-    })
+    questionDisplayed.answers.forEach((answer, i) => {
+        document.getElementById("option" + (i + 1)).innerHTML = answer.ans;
+    });
 }
 
 startQuiz()
 
-function enterAnswer(evt) {
+/*function enterAnswer(evt) {
    let clicked = evt.target.innerHTML;
   console.log(clicked);
 
+}*/
+
+/*function enterAnswer(evt) {
+    let clicked = evt.target.innerHTML;
+    console.log(clicked);
+
+    // Find the corresponding question object
+    const questionObj = question.find((q) => q.question === questionDisplayed.question);
+
+    // Find the corresponding answer object
+    const answerObj = questionObj.answers.find((a) => a.ans === clicked);
+
+    // Add classes based on the result
+    if (answerObj.result === true) {
+        evt.target.classList.add("green");
+    } else {
+        evt.target.classList.add("red");
+    }
+}*/
+
+const questions = document.getElementById("question");
+const answerButtons = document.getElementsByClassName("ans");
+const nextButton = document.getElementById("next");
+
+let currentQuestionCounter = 0;
+let score = 0;
+
+function startQuiz() {
+    currentQuestionCounter = 0;
+    score = 0;
+    nextButton.innerHTML = "Next";
+    showQuestion();
 }
+
+function showQuestion() {
+    let questionDisplayed = question[currentQuestionCounter];
+    let questionNumber = currentQuestionCounter + 1;
+    questions.innerHTML = questionNumber + ". " + questionDisplayed.question;
+
+    questionDisplayed.answers.forEach((answer, i) => {
+        document.getElementById("option" + (i + 1)).innerHTML = answer.ans;
+    });
+
+    // Remove any previous styling
+    for (let i = 0; i < answerButtons.length; i++) {
+        answerButtons[i].classList.remove("green", "red");
+    }
+}
+
+startQuiz();
+
+function enterAnswer(evt) {
+    let clicked = evt.target.innerHTML;
+    console.log(clicked);
+
+    // Find the corresponding question object
+    const questionObj = question[currentQuestionCounter];
+
+    // Find the corresponding answer object
+    const answerObj = questionObj.answers.find((a) => a.ans === clicked);
+
+    // Add classes based on the result
+    if (answerObj.result === true) {
+        evt.target.classList.add("green");
+        score++; // Increment the score if the answer is correct
+    } else {
+        evt.target.classList.add("red");
+    }
+
+    // Disable answer buttons after selection
+    for (let i = 0; i < answerButtons.length; i++) {
+        answerButtons[i].disabled = true;
+    }
+
+    // Show next button
+    nextButton.style.display = "block";
+}
+
+function nextQuestion() {
+    // Move to the next question
+    currentQuestionCounter++;
+
+    // If all questions are answered, show score
+    if (currentQuestionCounter >= question.length) {
+        questions.innerHTML = "Quiz Over! Your score is: " + score + "/" + question.length;
+        nextButton.style.display = "none"; // Hide next button
+    } else {
+        showQuestion();
+        nextButton.style.display = "none"; // Hide next button
+    }
+}
+
+// Adding event listeners
+for (let i = 0; i < answerButtons.length; i++) {
+    answerButtons[i].addEventListener("click", enterAnswer);
+}
+
+nextButton.addEventListener("click", nextQuestion);
+
+// Function to reset the game
+function resetGame() {
+    // Reset current question counter and score
+    currentQuestionCounter = 0;
+    score = 0;
+
+    // Show the first question
+    showQuestion();
+
+    // Remove any previous styling and enable answer buttons
+    for (let i = 0; i < answerButtons.length; i++) {
+        answerButtons[i].classList.remove("green", "red");
+        answerButtons[i].disabled = false;
+    }
+
+    // Hide the next button
+    nextButton.style.display = "none";
+
+    // Close the reset modal if it's open
+    const resetModal = document.getElementById("reset");
+    resetModal.style.display = "none";
+}
+
+// Event listener for the reset button
+resetButton.addEventListener("click", resetGame);

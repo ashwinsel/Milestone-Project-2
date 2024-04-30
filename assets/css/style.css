@@ -65,10 +65,7 @@ body, html {
     color:#ea070b;
   }
 
-  /* adding class to strike through when music is off */
-  button.btn.strike {
-    text-decoration: line-through;
-  }
+
   
   .close {
     color: #ffffff;
@@ -134,6 +131,14 @@ p.ans{
      border: 0.5px solid #800707;
      border-radius: 6px;
      text-align: center;
+   }
+
+   .green {
+    background-color: green;
+   }
+
+   .red {
+    background-color: #ea070b;
    }
 
    
