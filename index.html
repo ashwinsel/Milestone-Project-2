@@ -41,7 +41,7 @@
         </li>
         <li class="list-inline-item">
           <button id="toggleMusic" class="btn btnMusic">
-            Music Toggle 
+            Music On 
           </button>
         </li>
         <li class="list-inline-item">
@@ -51,15 +51,22 @@
         </li>
       </ul>
       <!-- The Modals -->
-      <div id="instructions" class="modal">
-        <div class="htp-instructions">
+      <div id="instructions" class="modal">        
           <span class="close">
             close
           </span>
           <p>
-            This is modal 1 content.
-          </p>
-        </div>
+            <ol>
+              <li>To start music click on Music On on top right hand corner.</li>
+              <li>To answer click on your selected option.</li>
+              <li>The "Next" option will appear on the bottom.</li>
+              <li>Proceed to next question by clicking on the "Next" button.</li>
+              <li>You will get the score after attempting 10 questions.</li>
+              <li>To reset the quiz click on "Reset" button on top right hand corner.</li>
+              <li>Click anywhere inside this box to leave "Guide".</li>
+              <li>Enjoy and Learn!</li>
+            </ol>
+          </p>        
       </div>      
       </header>
     <main class="container-fluid">
@@ -102,7 +109,7 @@
     </main>
     <footer>
     </footer>
-    <audio id="music" src="./assets/music/backgroundmusic.mp3" loop></audio>
+    <audio id="music" src="./assets/music/backgroundmusic.mp3" loop autoplay></audio>
     <script src="./assets/js/script.js">
     </script>
   </body>

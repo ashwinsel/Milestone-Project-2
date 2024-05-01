@@ -37,7 +37,7 @@ htp.onclick = function() {
 }
  
 rG.onclick = function() {
-    resetGameButton.style.display = "block";
+    resetButton.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modals
@@ -112,8 +112,8 @@ const question = [{
         question: "Which Hindu festival celebrates the victory of good over evil and the triumph of Lord Rama over Ravana?",
         answers: [
             {ans: "Holi", result: false},
-            {ans: "Dusshera", result: false},
-            {ans: "Janmasthami", result: true},
+            {ans: "Dusshera", result: true},
+            {ans: "Janmasthami", result: false},
             {ans: "Diwali", result: false},
         ]
     },
@@ -186,6 +186,7 @@ function startQuiz() {
     score = 0;
     nextButton.innerHTML = "Next";
     showQuestion();
+    nextButton.style.display = "none";
 }
 
 function showQuestion() {
@@ -208,7 +209,7 @@ function showQuestion() {
         var buttonId = "option" + [i];
         console.log(buttonId);
         let x = document.getElementById(buttonId);
-        x.style.pointerEvents = "";
+        x.style.pointerEvents = "";               
         
     }
     console.log(currentQuestionCounter);
@@ -221,10 +222,12 @@ function enterAnswer(evt) {
 
     // Find the corresponding question object
     const questionObj = question[currentQuestionCounter];
+    const ansArray = questionObj.answers;
 
     // Find the corresponding answer object
     const answerObj = questionObj.answers.find((a) => a.ans === clicked);
-
+    console.log(answerObj.ans);
+    
     // Add classes based on the result
     if (answerObj.result === true) {
         evt.target.classList.add("green");
@@ -233,16 +236,27 @@ function enterAnswer(evt) {
         evt.target.classList.add("red");
     }
 
+    // Find correct Answer object
+    let rightAns;
+    ansArray.forEach(function(obj, c){
+        if (obj.result === true){            
+        rightAns = ansArray[c].ans;
+        }       
+    });
+
     // Disable answer buttons after selection
     
     for (let i = 1; i <= answerButtons.length; i++) {
         var buttonId = "option" + [i];
         console.log(buttonId);
         let x = document.getElementById(buttonId);
-        x.style.pointerEvents = "none";
+        x.style.pointerEvents = "none";    
+        console.log(x.textContent);        
+        if(x.textContent === rightAns) {
+            evt.target.classList.add("green");
+        }
         
-    }
-    
+    }  
 
     // Show next button
     nextButton.style.display = "block";
@@ -258,7 +272,7 @@ function nextQuestion() {
 
     // If all questions are answered, show score
     if (currentQuestionCounter >= question.length) {
-        questions.innerHTML = "Quiz Over! Your score is: " + score + "/" + question.length;
+        questions.innerHTML = "Your score is: " + score + "/" + question.length;
         nextButton.style.display = "none"; // Hide next button
     } else {
         showQuestion();

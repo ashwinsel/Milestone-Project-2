@@ -47,15 +47,13 @@ body, html {
     z-index: 10;
     top: 10%;
     left: 50%;  
-    height: 50%;
-    width: 50%;
-    max-width: 70%;
-    transform: translate(-50%, -50%);
-    transition: 200ms ease-in-out;
+    height: 56%;
+    width: 50%;    
+    transform: translate(-51%, -3%);
+    transition: 500ms ease-in-out;
     overflow: auto;
     border: 0.5px solid #800707;
     border-radius: 6px;    
-    font-size: xx-large;
     padding-left: 5%;
   }
 
@@ -74,12 +72,7 @@ body, html {
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
+
 
 
   /* Styling menu elements */
@@ -122,6 +115,7 @@ main.container-fluid {
 
 p.ans{
   width: 42%;
+  cursor: pointer;
 }
 
 .ans
@@ -131,7 +125,7 @@ p.ans{
      border: 0.5px solid #800707;
      border-radius: 6px;
      text-align: center;
-     cursor: pointer;
+     
    }
 
    .green {
