@@ -137,10 +137,20 @@ p.ans {
 }
 
 
+#option1, #option2, #option3, #option4 {
+  flex-shrink: 0;
+  width: 42%;
+  max-width: fit-content;
+  margin-bottom: 10px;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x)* .5);
+  padding-left: calc(var(--bs-gutter-x)* .5);
+  margin-top: var(--bs-gutter-y);
+}
 
 
 
-#next {
+button #next {
   background-color: rgba(248, 216, 100, 0.8);
   color: rgb(19, 21, 22);
   font-size: 20px;

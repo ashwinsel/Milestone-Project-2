@@ -342,6 +342,7 @@ function enterAnswer(evt) {
         console.log(buttonId);
         let x = document.getElementById(buttonId);
         x.style.pointerEvents = "none";
+        x.style.button = "disable";
         console.log(x.textContent);
         if (x.textContent === rightAns) {
             x.classList.add("green");
@@ -371,10 +372,7 @@ function nextQuestion() {
     }
 }
 
-// Adding event listeners
-for (let i = 0; i < answerButtons.length; i++) {
-    answerButtons[i].addEventListener("click", enterAnswer);
-}
+
 
 nextButton.addEventListener("click", nextQuestion);
 
