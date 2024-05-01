@@ -66,12 +66,17 @@ button.btn {
 
 
 
-.close {
-  color: #ffffff;
+span.close {
+  color: #ffffff; !important;
   float: right;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 28px;  
 }
+
+span.close:hover {
+  color:#ea070b; !important;
+  text-decoration: none;
+}
+
 
 
 
@@ -145,21 +150,22 @@ p.ans {
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x)* .5);
   padding-left: calc(var(--bs-gutter-x)* .5);
-  margin-top: var(--bs-gutter-y);
+  margin-top: var(--bs-gutter-y);  
+  cursor: pointer;
 }
 
 
 
 button #next {
-  background-color: rgba(248, 216, 100, 0.8);
-  color: rgb(19, 21, 22);
-  font-size: 20px;
-  text-align: center;
-  height: 5vh;
-  max-width: max-content;
-  border: 0.5px solid #800707;
-  border-radius: 6px;
-  transition: all 0.2ms;
+  flex-shrink: 0;
+  width: 42%;
+  max-width: fit-content;
+  margin-bottom: 10px;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x)* .5);
+  padding-left: calc(var(--bs-gutter-x)* .5);
+  margin-top: var(--bs-gutter-y);  
+  cursor: pointer;
 
 }
 

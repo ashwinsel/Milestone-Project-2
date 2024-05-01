@@ -76,7 +76,7 @@ function resetGame() {
 // question object
 
 const question = [{
-    question: "Which mighty bird serves as the vehicle of Lord Vishnu?",
+    ques: "Which mighty bird serves as the vehicle of Lord Vishnu?",
     answers: [
         { ans: "Peacock", result: false },
         { ans: "Parrot", result: false },
@@ -85,7 +85,7 @@ const question = [{
     ]
 },
 {
-    question: "The epic Ramayana tells the tale of Rama's battle against which demon king?",
+    ques: "The epic Ramayana tells the tale of Rama's battle against which demon king?",
     answers: [
         { ans: "Ravana", result: true },
         { ans: "Duryodhana", result: false },
@@ -94,7 +94,7 @@ const question = [{
     ]
 },
 {
-    question: "The powerful weapon Trishul is associated with which deity?",
+    ques: "The powerful weapon Trishul is associated with which deity?",
     answers: [
         { ans: "Brahma", result: false },
         { ans: "Shiva", result: true },
@@ -103,7 +103,7 @@ const question = [{
     ]
 },
 {
-    question: "Which Hindu festival celebrates the victory of good over evil and the triumph of Lord Rama over Ravana?",
+    ques: "Which Hindu festival celebrates the victory of good over evil and the triumph of Lord Rama over Ravana?",
     answers: [
         { ans: "Holi", result: false },
         { ans: "Dusshera", result: true },
@@ -112,7 +112,7 @@ const question = [{
     ]
 },
 {
-    question: "What is the name of the celestial weapon wielded by Lord Vishnu?",
+    ques: "What is the name of the celestial weapon wielded by Lord Vishnu?",
     answers: [
         { ans: "Sudarshana Chakra", result: true },
         { ans: "Vajra", result: false },
@@ -121,7 +121,7 @@ const question = [{
     ]
 },
 {
-    question: "Nandi the mount of Shiva is represented by what animal?",
+    ques: "Nandi the mount of Shiva is represented by what animal?",
     answers: [
         { ans: "Mouse", result: false },
         { ans: "Monkey", result: false },
@@ -130,7 +130,7 @@ const question = [{
     ]
 },
 {
-    question: "What is the sacred abode of lord Vishnu?",
+    ques: "What is the sacred abode of lord Vishnu?",
     answers: [
         { ans: "Ocean", result: true },
         { ans: "Mars", result: false },
@@ -139,7 +139,7 @@ const question = [{
     ]
 },
 {
-    question: "Who is the goddess of wealth and prosperity in Hindu Mythology?",
+    ques: "Who is the goddess of wealth and prosperity in Hindu Mythology?",
     answers: [
         { ans: "Saraswati", result: false },
         { ans: "Kali", result: false },
@@ -148,7 +148,7 @@ const question = [{
     ]
 },
 {
-    question: "What does Krishna adornes on his head gear?",
+    ques: "What does Krishna adornes on his head gear?",
     answers: [
         { ans: "Peacock feather", result: true },
         { ans: "Gold Leaf", result: false },
@@ -157,7 +157,7 @@ const question = [{
     ]
 },
 {
-    question: "Krishna is beleived to be an incarnation of which god?",
+    ques: "Krishna is beleived to be an incarnation of which god?",
     answers: [
         { ans: "Brahma", result: false },
         { ans: "Shiva", result: false },
@@ -166,7 +166,7 @@ const question = [{
     ]
 },
 {
-    question: "Vayu is the god of which element?",
+    ques: "Vayu is the god of which element?",
     answers: [
         { ans: "Wind", result: true },
         { ans: "Water", result: false },
@@ -175,7 +175,7 @@ const question = [{
     ]
 },
 {
-    question: "Ravana was known as the king of which golden kingdom",
+    ques: "Ravana was known as the king of which golden kingdom",
     answers: [
         { ans: "Hastinapur", result: false },
         { ans: "Magadha", result: false },
@@ -184,7 +184,7 @@ const question = [{
     ]
 },
 {
-    question: "Hindu god Ganesha has a head of which animal?",
+    ques: "Hindu god Ganesha has a head of which animal?",
     answers: [
         { ans: "Horse", result: false },
         { ans: "Elephant", result: true },
@@ -193,7 +193,7 @@ const question = [{
     ]
 },
 {
-    question: "Vishnu is believed to have how many avatars (incarnations) on planet earth?",
+    ques: "Vishnu is believed to have how many avatars (incarnations) on planet earth?",
     answers: [
         { ans: "Three", result: false },
         { ans: "Fifteen", result: false },
@@ -202,7 +202,7 @@ const question = [{
     ]
 },
 {
-    question: "Which is considered the holy book of Hindu religion?",
+    ques: "Which is considered the holy book of Hindu religion?",
     answers: [
         { ans: "Gita", result: true },
         { ans: "Veda", result: false },
@@ -211,7 +211,7 @@ const question = [{
     ]
 },
 {
-    question: "What is considered the sacred language in Hindu religion?",
+    ques: "What is considered the sacred language in Hindu religion?",
     answers: [
         { ans: "Hebrew", result: false },
         { ans: "Hindi", result: false },
@@ -220,7 +220,7 @@ const question = [{
     ]
 },
 {
-    question: "Who is known as the Destroyer among the Hindu Trinity of Gods?",
+    ques: "Who is known as the Destroyer among the Hindu Trinity of Gods?",
     answers: [
         { ans: "Brahma", result: false },
         { ans: "Parvati", result: false },
@@ -229,7 +229,7 @@ const question = [{
     ]
 },
 {
-    question: "The Narasimha avatar of Vishnu is half human and half what animal?",
+    ques: "The Narasimha avatar of Vishnu is half human and half what animal?",
     answers: [
         { ans: "Pig", result: false },
         { ans: "Lion", result: true },
@@ -238,7 +238,7 @@ const question = [{
     ]
 },
 {
-    question: "What is the sacred white elephant ridden by Indra called?",
+    ques: "What is the sacred white elephant ridden by Indra called?",
     answers: [
         { ans: "Airavat", result: true },
         { ans: "Ashwathama", result: false },
@@ -247,7 +247,7 @@ const question = [{
     ]
 },
 {
-    question: "Which celestial river is considered sacred in Hinduism and flows through the Himalayas?",
+    ques: "Which celestial river is considered sacred in Hinduism and flows through the Himalayas?",
     answers: [
         { ans: "Ganga", result: true },
         { ans: "Saraswati", result: false },
@@ -260,7 +260,10 @@ const question = [{
 const questions = document.getElementById("question");
 const answerButtons = document.getElementsByClassName("ans");
 const nextButton = document.getElementById("next");
+const CopyOfQuestion = question;
+let question1 = question;
 
+// Generate random question number
 
 
 
@@ -272,21 +275,30 @@ let score = 0;
 // 
 function startQuiz() {
     currentQuestionCounter = 0;
+    question1 = question;
     questionNo = 0;
-    score = 0;
-    console.log(currentQuestionCounter);
+    score = 0;    
     nextButton.innerHTML = "Next";
     showQuestion();
     nextButton.style.display = "none";
 }
 
-function showQuestion() {
+function showQuestion() {     
+    question1 = question1.slice(0, currentQuestionCounter).concat(question1.slice(currentQuestionCounter + 1));        
+    console.log(question1);
+    const qL = question1.length - 1;    
+    while (true) {
+        currentQuestionCounter = Math.floor(Math.random() * qL) + 1; 
 
-    currentQuestionCounter = Math.floor(Math.random() * question.length - 1) + 1;
-    let questionDisplayed = question[currentQuestionCounter];
-    console.log(currentQuestionCounter);
+        if(currentQuestionCounter != 0 && currentQuestionCounter != qL) {
+            break;
+        }
+    }
+     
+    console.log(currentQuestionCounter);         
+    let questionDisplayed = question1[currentQuestionCounter];    
     let questionNumber = questionNo + 1;
-    questions.innerHTML = questionNumber + ". " + questionDisplayed.question;
+    questions.innerHTML = `${questionNumber}. ${questionDisplayed.ques}`;
 
     questionDisplayed.answers.forEach((answer, i) => {
         document.getElementById("option" + (i + 1)).innerHTML = answer.ans;
@@ -298,26 +310,26 @@ function showQuestion() {
     }
 
     for (let i = 1; i <= answerButtons.length; i++) {
-        var buttonId = "option" + [i];
-        console.log(buttonId);
+        var buttonId = "option" + [i];       
         let x = document.getElementById(buttonId);
         x.style.pointerEvents = "";
+        x.style.cursor = "pointer";
 
     }
-    console.log(currentQuestionCounter);
+    
 }
 
 function enterAnswer(evt) {
     const clicked = evt.target.innerHTML;
-    console.log("Clicked:", clicked);
+    
 
     // Find the corresponding question object
-    const questionObj = question[currentQuestionCounter];
+    const questionObj = question1[currentQuestionCounter];
     const ansArray = questionObj.answers;
 
     // Find the corresponding answer object
     const answerObj = questionObj.answers.find((a) => a.ans === clicked);
-    console.log(answerObj.ans);
+    
 
     // Add classes based on the result
     if (answerObj.result === true) {
@@ -339,11 +351,12 @@ function enterAnswer(evt) {
 
     for (let i = 1; i <= answerButtons.length; i++) {
         var buttonId = "option" + [i];
-        console.log(buttonId);
+        
         let x = document.getElementById(buttonId);
         x.style.pointerEvents = "none";
         x.style.button = "disable";
-        console.log(x.textContent);
+        x.style.cursor = "none";
+        
         if (x.textContent === rightAns) {
             x.classList.add("green");
         }
@@ -380,6 +393,7 @@ nextButton.addEventListener("click", nextQuestion);
 function resetGame() {
     // Reset current question counter and score
     currentQuestionCounter = 0;
+    question1 = question
     questionNo = 0;
     score = 0;
 
