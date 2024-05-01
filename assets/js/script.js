@@ -44,7 +44,7 @@ rG.onclick = function() {
 for (var i = 0; i < spans.length; i++) {
     spans[i].onclick = function() {
         howToPlay.style.display = "none";
-        resetGameButton.style.display = "none";
+        
     }
 }
 // When the user clicks anywhere outside of the modals, close them
@@ -71,12 +71,6 @@ function resetGame() {
     // Hide the next button
     nextButton.style.display = "none";
 }
-
-// Event listener for the reset button
-resetButton.addEventListener("click", function() {
-    openModal(resetGameButton);
-});
-
 // the quiz script
 
 // question object
@@ -178,6 +172,11 @@ const questions = document.getElementById("question");
 const answerButtons = document.getElementsByClassName("ans");
 const nextButton = document.getElementById("next");
 
+
+
+
+
+// Set initial values for quiz counter to nil
 let currentQuestionCounter = 0;
 let score = 0;
 
@@ -304,10 +303,7 @@ function resetGame() {
 
     // Hide the next button
     nextButton.style.display = "none";
-
-    // Close the reset modal if it's open
-    const resetModal = document.getElementById("reset");
-    resetModal.style.display = "none";
+    
 }
 
 // Event listener for the reset button
