@@ -178,11 +178,14 @@ const nextButton = document.getElementById("next");
 
 // Set initial values for quiz counter to nil
 let currentQuestionCounter = 0;
+let questionNo = 0;
 let score = 0;
 
 function startQuiz() {
     currentQuestionCounter = 0;
+    questionNo = 0;
     score = 0;
+    console.log(currentQuestionCounter);
     nextButton.innerHTML = "Next";
     showQuestion();
     nextButton.style.display = "none";
@@ -190,9 +193,10 @@ function startQuiz() {
 
 function showQuestion() {
 
+    currentQuestionCounter = Math.floor(Math.random() * 9) + 1;
     let questionDisplayed = question[currentQuestionCounter];
     console.log(currentQuestionCounter);
-    let questionNumber = currentQuestionCounter + 1;
+    let questionNumber = questionNo + 1;
     questions.innerHTML = questionNumber + ". " + questionDisplayed.question;
 
     questionDisplayed.answers.forEach((answer, i) => {
@@ -267,11 +271,11 @@ startQuiz();
 
 function nextQuestion() {
     // Move to the next question
-    currentQuestionCounter++;
+    questionNo++;
 
     // If all questions are answered, show score
-    if (currentQuestionCounter >= question.length) {
-        questions.innerHTML = "Your score is: " + score + "/" + question.length;
+    if (questionNo >= 10) {
+        questions.innerHTML = "Your score is: " + score + "/" + "10";
         nextButton.style.display = "none"; // Hide next button
     } else {
         showQuestion();
@@ -290,6 +294,7 @@ nextButton.addEventListener("click", nextQuestion);
 function resetGame() {
     // Reset current question counter and score
     currentQuestionCounter = 0;
+    questionNo = 0;
     score = 0;
 
     // Show the first question
