@@ -1,6 +1,9 @@
+/* Specifying the version of ECMAScript */
+/* eslint-env es6 */
+/* eslint arrow-body-style: "error" */
+
 // Get the modals
 var howToPlay = document.getElementById("instructions");
-var musicToggle12 = document.getElementById("musicOnOff");
 const music = document.getElementById("music");
 const musicToggle = document.getElementById("toggleMusic");
 const resetButton = document.querySelector(".btn-reset");
@@ -25,35 +28,27 @@ musicToggle.addEventListener("click", function () {
 
 // Get the buttons that open the modals
 var htp = document.querySelectorAll(".btn")[0];
-var mT = document.querySelectorAll(".btn")[1];
-var rG = document.querySelectorAll(".btn")[2];
-
-// Get the <span> elements that close the modals
-var spans = document.querySelectorAll(".close");
 
 // When the user clicks the buttons, open the corresponding modal
 htp.onclick = function () {
     howToPlay.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+
+function closeModal(cl) {
+    howToPlay.style.display = "none";
+
 }
 
-rG.onclick = function () {
-    resetButton.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modals
-for (var i = 0; i < spans.length; i++) {
-    spans[i].onclick = function () {
-        howToPlay.style.display = "none";
-
-    }
-}
-// When the user clicks anywhere outside of the modals, close them
+// When the user clicks anywhere outside of the Guide modal, close modal
 window.onclick = function (event) {
     if (event.target == howToPlay) {
         howToPlay.style.display = "none";
     }
 }
 
+// Reset Game function
 function resetGame() {
     // Reset current question counter and score
     currentQuestionCounter = 0;
@@ -71,9 +66,10 @@ function resetGame() {
     // Hide the next button
     nextButton.style.display = "none";
 }
-// the quiz script
 
-// question object
+// The quiz script
+
+// Questions and Answers Array of objects containing 20 questions
 
 const question = [{
     ques: "Which mighty bird serves as the vehicle of Lord Vishnu?",
@@ -255,82 +251,70 @@ const question = [{
         { ans: "Brahmaputra", result: false },
     ]
 },
-]
+];
 
 const questions = document.getElementById("question");
 const answerButtons = document.getElementsByClassName("ans");
 const nextButton = document.getElementById("next");
-const CopyOfQuestion = question;
 let question1 = question;
-
-// Generate random question number
-
-
-
 
 // Set initial values for quiz counter to nil
 let currentQuestionCounter = 0;
 let questionNo = 0;
 let score = 0;
-// 
+
+// Initializing quiz at the end of loading the page
+
 function startQuiz() {
     currentQuestionCounter = 0;
     question1 = question;
     questionNo = 0;
-    score = 0;    
+    score = 0;
     nextButton.innerHTML = "Next";
     showQuestion();
     nextButton.style.display = "none";
 }
 
-function showQuestion() {     
-    question1 = question1.slice(0, currentQuestionCounter).concat(question1.slice(currentQuestionCounter + 1));        
-    console.log(question1);
-    const qL = question1.length - 1;    
-    while (true) {
-        currentQuestionCounter = Math.floor(Math.random() * qL) + 1; 
+// Function to pick a random question from the array above and display it
 
-        if(currentQuestionCounter != 0 && currentQuestionCounter != qL) {
+function showQuestion() {
+    // Remove previously displayed question and assign it to another array
+    question1 = question1.slice(0, currentQuestionCounter).concat(question1.slice(currentQuestionCounter + 1));    
+    const qL = question1.length - 1;
+    while (true) {
+        currentQuestionCounter = Math.floor(Math.random() * qL) + 1;
+        // Ensuring the counter index does not return an integer less than length of new array
+        if (currentQuestionCounter != 0 && currentQuestionCounter != qL) {
             break;
         }
-    }
-     
-    console.log(currentQuestionCounter);         
-    let questionDisplayed = question1[currentQuestionCounter];    
+    }    
+    let questionDisplayed = question1[currentQuestionCounter];
     let questionNumber = questionNo + 1;
-    questions.innerHTML = `${questionNumber}. ${questionDisplayed.ques}`;
-
+    questions.innerHTML = `${questionNumber}. ${questionDisplayed.ques}`; // Display the Question with question number prefix
     questionDisplayed.answers.forEach((answer, i) => {
         document.getElementById("option" + (i + 1)).innerHTML = answer.ans;
-    });
-
-    // Remove any background-color already applied
+    }); // Display corresponding answers to the question displayed
+    // Remove any background-color already applied to answer boxes
     for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].classList.remove("green", "red");
     }
-
     for (let i = 1; i <= answerButtons.length; i++) {
-        var buttonId = "option" + [i];       
+        var buttonId = "option" + [i];
         let x = document.getElementById(buttonId);
         x.style.pointerEvents = "";
         x.style.cursor = "pointer";
 
     }
-    
 }
 
+// Retrieve the answer selected by user and respond 
 function enterAnswer(evt) {
     const clicked = evt.target.innerHTML;
-    
-
     // Find the corresponding question object
     const questionObj = question1[currentQuestionCounter];
     const ansArray = questionObj.answers;
-
     // Find the corresponding answer object
     const answerObj = questionObj.answers.find((a) => a.ans === clicked);
-    
-
     // Add classes based on the result
     if (answerObj.result === true) {
         evt.target.classList.add("green");
@@ -338,7 +322,6 @@ function enterAnswer(evt) {
     } else {
         evt.target.classList.add("red");
     }
-
     // Find correct Answer object
     let rightAns;
     ansArray.forEach(function (obj, c) {
@@ -346,36 +329,29 @@ function enterAnswer(evt) {
             rightAns = ansArray[c].ans;
         }
     });
-
     // Disable answer buttons after selection
-
     for (let i = 1; i <= answerButtons.length; i++) {
         var buttonId = "option" + [i];
-        
         let x = document.getElementById(buttonId);
         x.style.pointerEvents = "none";
         x.style.button = "disable";
         x.style.cursor = "none";
-        
+        // Add green color background to the right answer
         if (x.textContent === rightAns) {
             x.classList.add("green");
         }
-
     }
-
     // Show next button
     nextButton.style.display = "block";
 }
 
 startQuiz();
 
-
-
+// Proceed to next question when user clicks next button
 function nextQuestion() {
     // Move to the next question
     questionNo++;
-
-    // If all questions are answered, show score
+    // If all questions are answered, display score
     if (questionNo >= 10) {
         questions.innerHTML = `Your score is: ${score} / 10`;
         nextButton.style.display = "none"; // Hide next button
@@ -385,31 +361,24 @@ function nextQuestion() {
     }
 }
 
-
-
-nextButton.addEventListener("click", nextQuestion);
-
 // Function to reset the game
 function resetGame() {
     // Reset current question counter and score
     currentQuestionCounter = 0;
-    question1 = question
+    question1 = question;
     questionNo = 0;
     score = 0;
-
     // Show the first question
     showQuestion();
-
     // Remove any previous styling and enable answer buttons
     for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].classList.remove("green", "red");
         answerButtons[i].disabled = false;
     }
-
     // Hide the next button
     nextButton.style.display = "none";
-
 }
 
-// Event listener for the reset button
+// Event listener for the reset button and Next button
 resetButton.addEventListener("click", resetGame);
+nextButton.addEventListener("click", nextQuestion);
