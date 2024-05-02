@@ -147,7 +147,7 @@ p.ans {
 #option2,
 #option3,
 #option4,
-button #next {
+#next {
   flex-shrink: 0;
   width: 42%;
   max-width: fit-content;
@@ -158,8 +158,18 @@ button #next {
   cursor: pointer;
 }
 
-#next:hover {
-  background-color: #dedbdb;
+#next {
+  background-color: rgba(248, 216, 100, 0.6);
+  color: #800707;
+  font-size: large;
+  font-weight: 700;
+  height: 6vh;
+  border: 0.5px solid #800707;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 42%;
+  cursor: pointer;
 }
 
 /* Styling for responsive UX */
