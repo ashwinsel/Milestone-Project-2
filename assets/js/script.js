@@ -355,6 +355,9 @@ function nextQuestion() {
     if (questionNo >= 10) {
         questions.innerHTML = `Your score is: ${score} / 10`;
         nextButton.style.display = "none"; // Hide next button
+        for (let i = 0; i < answerButtons.length; i++) {
+            answerButtons[i].style.display ="none";
+        }
     } else {
         showQuestion();
         nextButton.style.display = "none"; // Hide next button
