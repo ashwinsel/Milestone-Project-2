@@ -296,7 +296,8 @@ function showQuestion() {
     }); // Display corresponding answers to the question displayed
     // Remove any background-color already applied to answer boxes
     for (let i = 0; i < answerButtons.length; i++) {
-        answerButtons[i].classList.remove("green", "red");
+        answerButtons[i].style.display = "block";
+        answerButtons[i].classList.remove("green", "red");        
     }
     for (let i = 1; i <= answerButtons.length; i++) {
         var buttonId = "option" + [i];
@@ -375,6 +376,7 @@ function resetGame() {
     showQuestion();
     // Remove any previous styling and enable answer buttons
     for (let i = 0; i < answerButtons.length; i++) {
+        answerButtons[i].style.display ="block";
         answerButtons[i].classList.remove("green", "red");
         answerButtons[i].disabled = false;
     }
