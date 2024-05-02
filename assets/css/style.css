@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* setting default edges to null */
 * {
   margin: 0;
@@ -5,7 +12,6 @@
   border: 0;
   font-family: 'karma', 'playfair', sans-serif;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -50,7 +56,9 @@ div#instructions.modal {
   right: 50%;
   height: 56%;
   width: 50%;
-  transform: translate(-51%, -3%);
+  -webkit-transform: translate(-51%, -3%);
+      -ms-transform: translate(-51%, -3%);
+          transform: translate(-51%, -3%);
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   z-index: 10;
@@ -148,8 +156,11 @@ p.ans {
 #option3,
 #option4,
 #next {
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 42%;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   margin-bottom: 10px;
   max-width: 100%;
