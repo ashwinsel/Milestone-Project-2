@@ -279,7 +279,7 @@ function startQuiz() {
 
 function showQuestion() {
     // Remove previously displayed question and assign it to another array
-    question1 = question1.slice(0, currentQuestionCounter).concat(question1.slice(currentQuestionCounter + 1));    
+    question1 = question1.slice(0, currentQuestionCounter).concat(question1.slice(currentQuestionCounter + 1));
     const qL = question1.length - 1;
     while (true) {
         currentQuestionCounter = Math.floor(Math.random() * qL) + 1;
@@ -287,7 +287,7 @@ function showQuestion() {
         if (currentQuestionCounter != 0 && currentQuestionCounter != qL) {
             break;
         }
-    }    
+    }
     let questionDisplayed = question1[currentQuestionCounter];
     let questionNumber = questionNo + 1;
     questions.innerHTML = `${questionNumber}. ${questionDisplayed.ques}`; // Display the Question with question number prefix
@@ -297,7 +297,7 @@ function showQuestion() {
     // Remove any background-color already applied to answer boxes
     for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].style.display = "block";
-        answerButtons[i].classList.remove("green", "red");        
+        answerButtons[i].classList.remove("green", "red");
     }
     for (let i = 1; i <= answerButtons.length; i++) {
         var buttonId = "option" + [i];
@@ -357,7 +357,7 @@ function nextQuestion() {
         questions.innerHTML = `Your score is: ${score} / 10`;
         nextButton.style.display = "none"; // Hide next button
         for (let i = 0; i < answerButtons.length; i++) {
-            answerButtons[i].style.display ="none";
+            answerButtons[i].style.display = "none";
         }
     } else {
         showQuestion();
@@ -376,7 +376,7 @@ function resetGame() {
     showQuestion();
     // Remove any previous styling and enable answer buttons
     for (let i = 0; i < answerButtons.length; i++) {
-        answerButtons[i].style.display ="block";
+        answerButtons[i].style.display = "block";
         answerButtons[i].classList.remove("green", "red");
         answerButtons[i].disabled = false;
     }

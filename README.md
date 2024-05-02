@@ -156,10 +156,12 @@ As a User from all different age groups and technical abilities I want the websi
             ![Thank You Page Wireframe][def8]               
 - ### Surface
     + #### Colour Scheme
-        * I have used a saffron/rufous palette which is consistent with the cultural representation of the website users and company.
-        * Black and red-orange font color plays a good contrast to the chosen colour palette.
+        * I have used a rusted copper ztar color palette consistent with the backgoruns image of a ethereal astronomical image.
+        * #0C3D40 a shade of dark green, black, and a dark rusty font colors play a good contrast to the chosen colour palette.
 
         ![Colour Scheme][def]
+        ![Colour Scheme][def43]
+        ![Colour Scheme][def44]
 
     + #### Typography
         * The Samarkan font is representative of the Marathi Devnagri script therefore this font was chosen for the logo  text. As this was not available on Google Fonts library, Cdnfonts has been used to import Samarkan font into style.css.
@@ -456,10 +458,10 @@ As a User from all different age groups and technical abilities I want the websi
 [def39]: ./documentation/lhcontactpage.png
 [def40]: ./documentation/lhthankyoupage.png
 [def41]: ./documentation/thankyouscreenshot.png
-[def]: ./documentation/colorsch.png
+[def]: ./documentation/colorschemess.png
 [def42]: https://ashwinsel.github.io/Milestone-Project-2/ "View Live Project Here"
-[def43]: ./documentation/samarkan.png
-[def44]: ./documentation/playfair.png
+[def43]: ./documentation/colorscheme.png
+[def44]: ./documentation/colorschemes.png
 [def45]: ./documentation/karma.png
 [def46]: ./assets/images/heroimg3.jpg
 [def47]: ./documentation/heroimgcallout.png
