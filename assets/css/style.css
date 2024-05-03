@@ -4,13 +4,16 @@
 * Autoprefixer: v10.4.7
 * Browsers: last 4 version
 */
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/samarkan');
 
 /* setting default edges to null */
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'karma', 'playfair', sans-serif;
+  font-family: "Lugrasimo", cursive, Arial, Helvetica, sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -41,8 +44,8 @@ html {
   -webkit-text-emphasis-color: #900a0a;
   text-emphasis-color: #900a0a;
   float: left;
-  font-family: "Lugrasimo", cursive;
-  font-weight: 500;
+  font-family: 'Samarkan', Arial, Helvetica, sans-serif;
+  font-weight: 600;
   color: #0C3D40;
   margin: 30px 0 0 50px;
 }
@@ -72,7 +75,7 @@ div#instructions.modal {
 
 button.btn {
   color: #ea070b;
-  font: small "Lugrasimo", cursive;
+  font-family: small "Lugrasimo", cursive, Arial, Helvetica, sans-serif;
 }
 
 span.close {
@@ -98,7 +101,7 @@ span.close:hover {
 .menu-items {
   float: right;
   margin: 55px 50px 0 0;
-  font-family: 'karma', sans-serif;
+  font-family: "Lugrasimo", cursive, Arial, Helvetica, sans-serif;
   color: #f9fbfb;
 }
 
@@ -121,7 +124,8 @@ main.container-fluid {
   color: rgb(4, 4, 4);
   border: 0.5px solid #800707;
   border-radius: 6px;
-  font-family: "Space Mono", monospace;
+  font-family: "Space Mono", monospace, Arial, Helvetica, sans-serif;
+  font-weight: 400;
   height: 10vh;
 }
 
@@ -191,8 +195,8 @@ p.ans {
     -webkit-text-emphasis-color: #900a0a;
   text-emphasis-color: #900a0a;
   float: left;
-  font-family: "Lugrasimo", cursive;
-  font-weight: 500;
+  font-family: 'Samarkan', Arial, Helvetica, sans-serif;
+  font-weight: 600;
   color: #0C3D40;
   margin: 30px 0 0 50px;
   }
@@ -206,7 +210,10 @@ p.ans {
 @media screen and (max-width: 768px) {
   .title {
     color: #0C3D40;
-    font: 500 1em/1 "Lugrasimo", cursive;
+    font: 500 1em/1 'Samarkan', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: x-large;
+    margin: 30px 0 0 50px;
   }
 
   .ans {
@@ -234,7 +241,9 @@ p.ans {
   /* index.html page */
   .title {
     color: #0C3D40;
-    font: 500 1em/1 "Lugrasimo", cursive;
+    font: 500 1em/1 'Samarkan', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: x-large;
   }
 
   .ans {
@@ -254,7 +263,9 @@ p.ans {
 @media screen and (max-width: 320px) {
   h1.title {
     color: #0C3D40;
-    font: 500 1em/1 "Lugrasimo", cursive;
+    font: 500 1em/1 'Samarkan', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: large;
   }
   .ans {
     margin-left: 0%;

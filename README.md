@@ -144,16 +144,10 @@ As a User from all different age groups and technical abilities I want the websi
         * Footer Section: Currently empty but open for future content or links to enhance user engagement and exploration.
 - ### Skeleton
     + #### Wireframes
-        * ##### Home Page Wireframes
+        * ##### Quiz Layout Wireframes
             ![Home Page Wireframe][def4]
-        * ##### Events Page Wireframe
-            ![Events Page Wireframe][def5]
-        * ##### Gallery Page Wireframe
-            ![Gallery Page Wireframe][def6]
-        * ##### Contact Page Wireframe
-            ![Contact Page Wireframe][def7]
-        * ##### Thank You Page Wireframe
-            ![Thank You Page Wireframe][def8]               
+        * ##### Score Wireframe
+            ![Events Page Wireframe][def5]                    
 - ### Surface
     + #### Colour Scheme
         * I have used a rusted copper ztar color palette consistent with the backgoruns image of a ethereal astronomical image.
@@ -420,8 +414,8 @@ As a User from all different age groups and technical abilities I want the websi
 [Cdnfonts]: https://www.cdnfonts.com/samarkan.font
 [def2]: #c-frequent-user-goals
 [def3]: #future-implementations
-[def4]: ./documentation/homepagewireframe.png
-[def5]: ./documentation/eventspagewireframe.png
+[def4]: ./documentation/wireframe1.jpg
+[def5]: ./documentation/wireframe2.jpg
 [def6]: ./documentation/gallerypagewireframe.png
 [def7]: ./documentation/contactpagewireframe.png
 [def8]: ./documentation/thankyoupagewireframe.png
@@ -440,7 +434,7 @@ As a User from all different age groups and technical abilities I want the websi
 [def21]: ./documentation/homepagewireframe.png
 [def22]: https://ui.dev/amiresponsive?url=https://ashwinsel.github.io/Milestone-1/index.html
 [def23]: https://www.freeformatter.com/html-formatter.html
-[def24]: ./documentation/uirespsh.png
+[def24]: ./documentation/uirespsh.jpg
 [def25]: ./documentation/eventsscreenshot.png
 [def26]: ./documentation/galleryscreenshot.png
 [def27]: ./documentation/contactscreenshot.png
