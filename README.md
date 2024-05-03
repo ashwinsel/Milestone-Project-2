@@ -165,73 +165,44 @@ As a User from all different age groups and technical abilities I want the websi
         ![spaceMono][def44]
         * Arial, Helvetica, sans-serif - have been used as a contingency fonts when the above fonts fail to load. These have been chosen due to their versatality and readability.
     + #### Imagery
-        ![heroimage][def46]
-        *      
-        * ![favicon][def49] The favicon was designed using an online favicon generator. This has been designed with a saffron background with the initials of the organisation 'WMS'
+        ![backgroundimage][def46]
+        *   The ethereal image of the Carina Nebula, with its vast expanse of swirling gas clouds and radiant celestial bodies, evokes a sense of awe and wonder that transcends the boundaries of our earthly existence. In Hinduism, spirituality is often intertwined with the contemplation of the cosmos, where the universe is perceived as a manifestation of the divine.
+        * ![favicon][def49] The favicon was designed using an online favicon generator. This has been designed with an "Om" symbol that represents Hinduism.
         * All the images used are license free or been used with owners consent. The sources are listed in the Credits section.
-        * Images used were compressed using tinyfy tool on the first instance, however, this did not suffice (as reflected in lighthouse testing) Therefore Shrink.media online tool was used to futher compress for better performance and user experience.
+        * Images used were compressed using Tinypng.com for better performance and user experience.
 
 ## **Features**
 ------------
-![Home Page][def24]
-- ### Home Page Features
-    * ##### F1.1 Navigation Bar
-        - The navigation bar has a Logo that has a link to navigate back to home-page at any time also the nav bar makes it easier for users to intuitively navigate through various sections of the website without the requirement to use the back button to navigate through the site.
-        ![F1.1][def78]
+- ### Quiz landing page
+    * ##### F1.1 Guide
+        - The "Guide" function serves as a navigational element within the user interface, denoted as a menu button. Upon activation, this button initiates the deployment of a modal interface, which in turn furnishes users with comprehensive instructional content outlining the how to participate in the quiz and explain all other features. Through these guidelines, the modal interface provides the steps to play the quiz to users, thereby enhancing their overall interactive experience within the quiz environment.
+        ![Guide Button][def78]
 
-    * ##### F1.2 Landing Page
-        - Landing Page image and call to action     
-        - Hero section with an image    
-        - This section contains a form to input your email address to sign up and become a member
-        ![F1.2][def47]
+    * ##### F1.2 Music Toggle Button
+        - The incorporation of background music within the web interface is configured with the attributes of autoplay and loop, facilitating a continuous and immersive auditory experience for users engaging with the platform. Nonetheless, it is noteworthy that certain browser configurations may restrict the automatic playback of such audio elements. To address this potential limitation, users are provided with a dedicated music control button, enabling manual activation or deactivation of the auditory component. This toggle functionality dynamically adjusts the displayed text on the button interface in accordance with the current status of the background music, affording users intuitive control over their auditory environment.
+        
+        ![Music Toggle Button][def47]
 
-    * ##### F1.3 Information Cards
-        - These are information cards that contain a header text on top to display the topic heading of the legend.
-        - Hover over or clicking on these cards triggers the legend text to be displayed.           - 
-        ![F1.3][def50]
-        ![F1.3.][def51]
-        ![F1.3responsive][def54]
+    * ##### F1.3 Rest button
+        - The "reset" button provides users the capability to reset the ongoing quiz at their discretion, thereby resetting the score to zero and initiating the quiz anew from question number 1. The randomized nature of question selection, ensures that subsequent quiz attempts commence with a fresh set of questions and so gives users a better experience.
+        ![Reset Button][def50]
+        
+    * ##### F1.4 Question Box
+        - The question box displays the question that is generated at random from a set of questions in the array.
+        ![Question Display Box][def28]
 
-    * ##### F1.4 Footer
-        - Footer section is ensured to stay on the bootom of the page at all times. 
-        - The footer bar features links to social media pages for Facebook and Instagram. When clicked on it should redirect the user to the social media homepage in a new window.
-        ![F1.4][def53]
+    * ##### F1.5 Answer option buttons x 4
+        - The quiz presents users with four answer options to select from. Functionality is implemented such that choosing the correct answer results in the option turning green. Conversely, selecting an incorrect answer causes the chosen option to turn red, while the correct answer is highlighted in green.
+        ![Right Answer][def64] ![Wrong Answer][def65]
 
-------------            
+    * ##### F1.6 Next Button
+        - The Next button is not visible until the user has clicked on an answer, therefore limiting the user to proceed without answering a question. User can click on the next button to proceed to the next question. When the next question is displayed the "Next" button disappears again until an answer is clicked upon.
+        ![Next Button][def66]
 
-![Events Page][def25]
-- ### Events Page Features
-    * ##### F2.1 Navigation Bar
-        - Repeats the same on all pages for consistency in UX.
+    * ##### F1.7 Score Display Box
+        - The Next 
+        ![Score Display][def67]
 
-    * ##### F2.2 Event 1
-        - The event flyer should feature on one-third height of the back-ground image on the Mandala side (left-side) therefore leaving a clear background on available real-estate to clearly visible event details. 
-        - When this is opened on smaller screens the image is set to 0 height so that the screen covers only the details.
-            ![F2.2][def52]
-
-    * ##### F2.3 Event 2
-        - The event flyer should feature on one-third height of the back-ground image on the Mandala side (right-side) therefore leaving a clear background on available real-estate to clearly visible event details. 
-        - When this is opened on smaller screens the image is set to 0 height so that the screen covers only the details.
-            ![F2.3][def55]
-
-    * ##### F2.4 Footer
-        - Repeats the same on all pages for consistency in UX.
-------------
-
-![Thank You Page][def28]
-- ### Thank you Page Features
-    * ##### F5.1 Navigation Bar
-        - Repeats the same on all pages for consistency in UX.
-
-    * ##### F5.2 Confirmation Message
-        - For best UX the submission of this form brings up a receipt page which is the thank you page and user is able to navigate back from this page using nav links.
-        ![F5.2][def64]
-
-    * ##### F5.3 Flipped Hero Image
-        - Second image for aesthetically pleasing page and also helps push the footer to the bottom of the page.
-
-    * ##### F5.4 Footer
-        - Repeats the same on all pages for consistency in UX.
 ------------            
 - ### Traceability Matrix
     ![Table][def74]
@@ -342,8 +313,8 @@ As a User from all different age groups and technical abilities I want the websi
 [Cdnfonts]: https://www.cdnfonts.com/samarkan.font
 [def2]: #c-frequent-user-goals
 [def3]: #future-implementations
-[def4]: ./documentation/wireframe1.jpg
-[def5]: ./documentation/wireframe2.jpg
+[def4]: ./documentation/wireframe1.png
+[def5]: ./documentation/wireframe2.png
 [def6]: ./documentation/gallerypagewireframe.png
 [def7]: ./documentation/contactpagewireframe.png
 [def8]: ./documentation/thankyoupagewireframe.png
@@ -366,7 +337,7 @@ As a User from all different age groups and technical abilities I want the websi
 [def25]: ./documentation/eventsscreenshot.png
 [def26]: ./documentation/galleryscreenshot.png
 [def27]: ./documentation/contactscreenshot.png
-[def28]: ./documentation/thankyouscreenshot.png
+[def28]: ./documentation/questionbox.png
 [def29]: ./documentation/1lhhome.png
 [def30]: ./documentation/1lhcontact.png
 [def31]: ./documentation/1lhgallery.png
@@ -385,11 +356,11 @@ As a User from all different age groups and technical abilities I want the websi
 [def43]: ./documentation/samarkanfont.png
 [def44]: ./documentation/spacemonofont.png
 [def45]: ./documentation/lugrasimofont.png
-[def46]: ./assets/images/page.webp
-[def47]: ./documentation/heroimgcallout.png
+[def46]: ./documentation/backgroundimage.png
+[def47]: ./documentation/musiconoff.png
 [def48]: ./assets/images/footer.jpg
 [def49]: ./assets/images/favicon.png
-[def50]: ./documentation/cards.png
+[def50]: ./documentation/reset.png
 [def51]: ./documentation/homefeat.png
 [def52]: ./documentation/events1.png
 [def53]: ./documentation/footerss.png
@@ -403,9 +374,9 @@ As a User from all different age groups and technical abilities I want the websi
 [def61]: ./documentation/eventtitle3.png
 [def62]: ./documentation/contactcallout.png
 [def63]: ./documentation/himage2.png
-[def64]: ./documentation/thankyoucallout.png
-[def65]: https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fashwinsel.github.io%2FMilestone-1%2F#textarea
-[def66]: https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fashwinsel.github.io%2FMilestone-1%2F#textarea
+[def64]: ./documentation/rightans.png
+[def65]: ./documentation/wrongans.png
+[def66]: ./documentation/nextbutton.png
 [def67]: https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fashwinsel.github.io%2FMilestone-1%2F#textarea
 [def68]: https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fashwinsel.github.io%2FMilestone-1%2F#textarea
 [def69]: https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fashwinsel.github.io%2FMilestone-1%2F#textarea
@@ -417,5 +388,5 @@ As a User from all different age groups and technical abilities I want the websi
 [def75]: https://codepen.io/wikyware-net/pen/abwVORa
 [def76]: https://www.buymeacoffee.com/tech2etc
 [def77]: https://www.vecteezy.com/members/graphicsrf
-[def78]: ./documentation/nav.png
+[def78]: ./documentation/menubar.png
 [def79]: ./documentation/table2.png
