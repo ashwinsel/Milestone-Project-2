@@ -158,17 +158,15 @@ As a User from all different age groups and technical abilities I want the websi
     + #### Typography
         * The Samarkan font is representative of the Sanskrit Devnagri script therefore this font was chosen for the quiz title text. As this was not available on Google Fonts library, Cdnfonts has been used to import Samarkan font into style.css.
         ![samarkan][def43]
-        * Google Fonts has been used to import 'SpaceMono' and  fonts into style.css. These have been chosen as they are readable in all font weights and have a simple and modern feel. These fonts also match the mandala hero images used well due to their angled edges.
-        **Karma**
-        ![karma][def45]
-        **Playfair**
-        ![playfair][def44]
+        * Google Fonts has been used to import 'SpaceMono' and  fonts into style.css. These have been chosen as they are readable in all font weights and have a playful look but are also easy to read. These fonts also match the style of the title font.
+        **Lugrasimo**
+        ![lugrasimo][def45]
+        **SpaceMono**
+        ![spaceMono][def44]
+        * Arial, Helvetica, sans-serif - have been used as a contingency fonts when the above fonts fail to load. These have been chosen due to their versatality and readability.
     + #### Imagery
         ![heroimage][def46]
-        * The chosen Hero image for backgrounds all pages is consistent with the feel of an Indian origin society due to the Mandala patterns.
-        * These images have been chosen due to their large clear space of two-thirds area of the image while flaunting a Mandala design on one-third area. The clear space makes all the text aganist it readable while the Mandala design adds aesthetics.
-        ![footerimage][def48]
-        * The Image chosen for footer has a skyline of Mumbai, which is the capital city of Maharashtra. This skyline is set on a saffron background which is consistent to the colour scheme.      
+        *      
         * ![favicon][def49] The favicon was designed using an online favicon generator. This has been designed with a saffron background with the initials of the organisation 'WMS'
         * All the images used are license free or been used with owners consent. The sources are listed in the Credits section.
         * Images used were compressed using tinyfy tool on the first instance, however, this did not suffice (as reflected in lighthouse testing) Therefore Shrink.media online tool was used to futher compress for better performance and user experience.
@@ -218,74 +216,6 @@ As a User from all different age groups and technical abilities I want the websi
 
     * ##### F2.4 Footer
         - Repeats the same on all pages for consistency in UX.
-
-------------        
-
-![Gallery Page][def26]
-- ### Gallery Page Features
-    * ##### F3.1 Navigation Bar
-            - Repeats the same on all pages for consistency in UX.
-
-    * ##### F3.2 Event Title
-        - Displays on a separate container with a partially opaque background.
-        - Each photo-grid is separated by the event title so that the user can easily spot the relevant photos.
-            ![F3.2][def56]
-
-    * ##### F3.3 Photograph Grid
-        - A responsive photo gallery that is categorised by separate events.
-        - each photo has a border to make it pop out.
-        - Having a rounded border radius is also consistent with the website style throughout.
-        - It has been ensured that each image has a detailed alt attribute for accesibility for visibily impaired users.
-        ![F3.3][def57]
-
-    * ##### F3.4 Event Title
-        - Displays on a separate container with a partially opaque background.
-        - Each photo-grid is separated by the event title so that the user can easily spot the relevant photos.
-        ![F3.4][def58]
-
-    * ##### F3.5 Photograph Grid
-        - A responsive photo gallery that is categorised by separate events.
-        - each photo has a border to make it pop out.
-        - Having a rounded border radius is also consistent with the website style throughout.
-        - It has been ensured that each image has a detailed alt attribute for accesibility for visibily impaired users.
-        ![F3.5][def59]
-
-    * ##### F3.6 Event Title
-        - Displays on a separate container with a partially opaque background.
-        - Each photo-grid is separated by the event title so that the user can easily spot the relevant photos. 
-        ![F3.6][def61]
-
-    * ##### F3.7 Photograph Grid
-        - A responsive photo gallery that is categorised by separate events.
-        - each photo has a border to make it pop out.
-        - Having a rounded border radius is also consistent with the website style throughout.
-        - It has been ensured that each image has a detailed alt attribute for accesibility for visibily impaired users.
-        ![F3.7][def60]
-
-    * ##### F3.8 Footer
-        - Repeats the same on all pages for consistency in UX.
-
-------------
-
-![Contact Page][def27]
-- ### Contact Page Features
-    * ##### F4.1 Navigation Bar
-        - Repeats the same on all pages for consistency in UX.
-
-    * ##### F4.2 Contact Form
-        - The contact page features a form that uses placeholder texts as a label and on research when spoken to friends, family members and colleagues they found that label was not required wihtin these forms as they are self explanatory due to the placeholder text.
-        - All the features are contained within a red border with border radius to be consistent with the website style thourghout.
-        - All fields are marked required so return a required prompt when left blank.
-        - For best UX the submission of this form brings up a receipt page which is the thank you page and user is able to navigate back from this page using nav links.
-        ![F4.2][def62]
-
-    * ##### F4.3 Flipped Hero Image
-        - Second image for aesthetically pleasing page and also helps push the footer to the bottom of the page.
-        ![F4.3][def63]
-
-    * ##### F4.4 Footer
-        - Repeats the same on all pages for consistency in UX.
-
 ------------
 
 ![Thank You Page][def28]
@@ -453,9 +383,9 @@ As a User from all different age groups and technical abilities I want the websi
 [def42]: ./documentation/colorschemess.png
 [def42]: https://ashwinsel.github.io/Milestone-Project-2/ "View Live Project Here"
 [def43]: ./documentation/samarkanfont.png
-[def44]: ./documentation/colorschemes.png
-[def45]: ./documentation/karma.png
-[def46]: ./assets/images/heroimg3.jpg
+[def44]: ./documentation/spacemonofont.png
+[def45]: ./documentation/lugrasimofont.png
+[def46]: ./assets/images/page.webp
 [def47]: ./documentation/heroimgcallout.png
 [def48]: ./assets/images/footer.jpg
 [def49]: ./assets/images/favicon.png
