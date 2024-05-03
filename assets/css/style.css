@@ -211,7 +211,7 @@ p.ans {
 
   .ans {
     margin-left: 0%;
-    width: 100%;
+    height: fit-content;
   }
 
   .container {
@@ -237,6 +237,11 @@ p.ans {
     font: 500 1em/1 "Lugrasimo", cursive;
   }
 
+  .ans {
+    margin-left: 0%;
+    height: fit-content;
+  }
+
   .container {
     font-size: 236%;
     margin-left: 25px;
@@ -250,5 +255,9 @@ p.ans {
   h1.title {
     color: #0C3D40;
     font: 500 1em/1 "Lugrasimo", cursive;
+  }
+  .ans {
+    margin-left: 0%;
+    height: fit-content;
   }
 }
