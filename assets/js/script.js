@@ -117,7 +117,7 @@ const question = [{
     ]
 },
 {
-    ques: "Nandi the mount of Shiva is represented by what animal?",
+    ques: "Nandi, the mount of Shiva, is represented by what animal?",
     answers: [
         { ans: "Mouse", result: false },
         { ans: "Monkey", result: false },
@@ -126,7 +126,7 @@ const question = [{
     ]
 },
 {
-    ques: "What is the sacred abode of lord Vishnu?",
+    ques: "What is the sacred abode of Lord Vishnu?",
     answers: [
         { ans: "Ocean", result: true },
         { ans: "Mars", result: false },
@@ -144,7 +144,7 @@ const question = [{
     ]
 },
 {
-    ques: "What does Krishna adornes on his head gear?",
+    ques: "What does Krishna adorn on his headgear?",
     answers: [
         { ans: "Peacock feather", result: true },
         { ans: "Gold Leaf", result: false },
@@ -153,7 +153,7 @@ const question = [{
     ]
 },
 {
-    ques: "Krishna is beleived to be an incarnation of which god?",
+    ques: "Krishna is believed to be an incarnation of which god?",
     answers: [
         { ans: "Brahma", result: false },
         { ans: "Shiva", result: false },
@@ -171,7 +171,7 @@ const question = [{
     ]
 },
 {
-    ques: "Ravana was known as the king of which golden kingdom",
+    ques: "Ravana was known as the king of which golden kingdom?",
     answers: [
         { ans: "Hastinapur", result: false },
         { ans: "Magadha", result: false },
@@ -198,7 +198,7 @@ const question = [{
     ]
 },
 {
-    ques: "Which is considered the holy book of Hindu religion?",
+    ques: "Which is considered the holy book of the Hindu religion?",
     answers: [
         { ans: "Gita", result: true },
         { ans: "Veda", result: false },
@@ -207,7 +207,7 @@ const question = [{
     ]
 },
 {
-    ques: "What is considered the sacred language in Hindu religion?",
+    ques: "What is considered the sacred language in the Hindu religion?",
     answers: [
         { ans: "Hebrew", result: false },
         { ans: "Hindi", result: false },
