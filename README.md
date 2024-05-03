@@ -1,4 +1,4 @@
-# Wales Marathi Society Website
+# Hindu Mythology Quiz
 ###### Code Institute / User-Centric Front-End Development / Milestone Project 2
 ------------
 [View Live Project Here][def42]
@@ -153,14 +153,12 @@ As a User from all different age groups and technical abilities I want the websi
         * I have used a rusted copper ztar color palette consistent with the backgoruns image of a ethereal astronomical image.
         * #0C3D40 a shade of dark green, black, and a dark rusty font colors play a good contrast to the chosen colour palette.
 
-        ![Colour Scheme][def]
-        ![Colour Scheme][def43]
-        ![Colour Scheme][def44]
+        ![Colour Scheme][def42]        
 
     + #### Typography
-        * The Samarkan font is representative of the Marathi Devnagri script therefore this font was chosen for the logo  text. As this was not available on Google Fonts library, Cdnfonts has been used to import Samarkan font into style.css.
+        * The Samarkan font is representative of the Sanskrit Devnagri script therefore this font was chosen for the quiz title text. As this was not available on Google Fonts library, Cdnfonts has been used to import Samarkan font into style.css.
         ![samarkan][def43]
-        * Google Fonts has been used to import Karma and Playfair fonts into style.css. These have been chosen as they are readable in all font weights and have a simple and modern feel. These fonts also match the mandala hero images used well due to their angled edges.
+        * Google Fonts has been used to import 'SpaceMono' and  fonts into style.css. These have been chosen as they are readable in all font weights and have a simple and modern feel. These fonts also match the mandala hero images used well due to their angled edges.
         **Karma**
         ![karma][def45]
         **Playfair**
@@ -452,9 +450,9 @@ As a User from all different age groups and technical abilities I want the websi
 [def39]: ./documentation/lhcontactpage.png
 [def40]: ./documentation/lhthankyoupage.png
 [def41]: ./documentation/thankyouscreenshot.png
-[def]: ./documentation/colorschemess.png
+[def42]: ./documentation/colorschemess.png
 [def42]: https://ashwinsel.github.io/Milestone-Project-2/ "View Live Project Here"
-[def43]: ./documentation/colorscheme.png
+[def43]: ./documentation/samarkanfont.png
 [def44]: ./documentation/colorschemes.png
 [def45]: ./documentation/karma.png
 [def46]: ./assets/images/heroimg3.jpg

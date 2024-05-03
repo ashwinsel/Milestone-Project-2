@@ -34,7 +34,7 @@ html {
 
 /* Background image covering entire page */
 .page {
-  background: url("../images/page.jpg") center/cover no-repeat;
+  background: url("../images/page.webp") center/cover no-repeat;
   height: 150%;
  
 }
