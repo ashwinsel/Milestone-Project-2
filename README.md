@@ -250,7 +250,7 @@ As a User from all different age groups and technical abilities I want the websi
 + ### Validator Testing Results
     ![Results][def6]
     
-    * #### Lighthouse Testing
++ ### Lighthouse Testing
     At the first instance the results for performance were low at 83%. Thereafter, on further analysis of it was identified the image files and an extra bootstrap cdn were the LCP element and unused CSS respectively. I then changed the background image file to webp format as recommended on lighthouse dev tool and removed the earlier version cdn for bootstrap.
     Following are screen shots of Lighthouse analysis outcomes before repairs and after repairs
     - #### First Results 
@@ -260,6 +260,17 @@ As a User from all different age groups and technical abilities I want the websi
         ![Final Result][def8]
     * #### Test Cases and Results
    ![.][def16]
+
++ ### Responsiveness Testing Results
+    ![Results][def26]
+    ![iPhone X][def27]
+    ![iPhone SE][def30]
+    ![Galaxy S8][def31]
+    ![Google Pixel 7][def32]
+    ![iPad Air][def33]
+    ![Desktop 1024px][def34]
+    ![iPad Pro][def35]
+    ![Desktop > 1200px][def36]
             
 - ## Bugs and Fixes
 ------------
@@ -338,6 +349,7 @@ As a User from all different age groups and technical abilities I want the websi
 - ### Content
     * Most of the question and answers are adapted from jagranJosh website [JagranJosh][def75]
     * All other content has been drafted by the developer.
+
 - ### Code
     * Code on how to present a modal and close was created with the help of a tutorial on [WebDevSimplified][def76].
     * Code for the hover effect on info cards on Home page was an play around with some examples from  [Codepen]
@@ -347,8 +359,7 @@ As a User from all different age groups and technical abilities I want the websi
 
 - ### Media
     * ![Favicon][def1] a vector art by ([Scigola](https://pixabay.com/vectors/symbol-om-religion-1537054/))
-    * ![Background Image][def0] is a image of Carina Nebula, NGC 3372 Hubble by ([NASA, ESA, N. Smith (University of California, Berkeley), and The Hubble Heritage Team (STScI/AURA);CTIO Image: N. Smith (University of California, Berkeley) and NOAO/AURA/NSF](https://hubblesite.org/contents/media/images/2007/16/2113-Image.html?news=true))
-    
+    * ![Background Image][def0] is a image of Carina Nebula, NGC 3372 Hubble by ([NASA, ESA, N. Smith (University of California, Berkeley), and The Hubble Heritage Team (STScI/AURA);CTIO Image: N. Smith (University of California, Berkeley) and NOAO/AURA/NSF](https://hubblesite.org/contents/media/images/2007/16/2113-Image.html?news=true))    
 
 - ## Gratitude
     * I would like to thank my mentor Dick Vlaanderen for all the coaching and helping me with their insight and experience.
@@ -387,8 +398,17 @@ As a User from all different age groups and technical abilities I want the websi
 [def23]: https://www.freeformatter.com/html-formatter.html
 [def24]: ./documentation/uirespsh.jpg
 [def25]: ./documentation/flowchart.png
+[def26]: ./documentation/responsivenesstestmatrix.png
+[def27]: ./documentation/iphonex.png
 [def28]: ./documentation/questionbox.png
 [def29]: /documentation/colorschemess.png
+[def30]: ./documentation/iphonese.png
+[def31]: ./documentation/galaxys8.png
+[def32]: ./documentation/googlepixel7.png
+[def33]: ./documentation/ipadair.png
+[def34]: ./documentation/1024px.png
+[def35]: ./documentation/ipadpro.png
+[def36]: ./documentation/desktopmore1200px.jpg
 [def42]: https://ashwinsel.github.io/Milestone-Project-2/
 [def43]: ./documentation/samarkanfont.png
 [def44]: ./documentation/spacemonofont.png
