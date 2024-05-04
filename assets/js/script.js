@@ -47,7 +47,7 @@ window.onclick = function (event) {
     if (event.target == howToPlay) {
         howToPlay.style.display = "none";
     }
-}
+};
 
 // The quiz script
 

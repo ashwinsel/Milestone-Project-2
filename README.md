@@ -153,7 +153,7 @@ As a User from all different age groups and technical abilities I want the websi
         * I have used a rusted copper ztar color palette consistent with the backgoruns image of a ethereal astronomical image.
         * #0C3D40 a shade of dark green, black, and a dark rusty font colors play a good contrast to the chosen colour palette.
 
-        ![Colour Scheme][def42]        
+        ![Colour Scheme][def29]        
 
     + #### Typography
         * The Samarkan font is representative of the Sanskrit Devnagri script therefore this font was chosen for the quiz title text. As this was not available on Google Fonts library, Cdnfonts has been used to import Samarkan font into style.css.
@@ -218,7 +218,11 @@ As a User from all different age groups and technical abilities I want the websi
 ------------            
 - ### Traceability Matrix
     ![Table][def74]
-    
+------------
+- ## **Logic**
+    * The initial flowchart designed to the basic quiz interactivity is as follows:
+    ![Flowchart] [def25]
+------------    
 - ## **Technologies Used**
 ------------
 + ### Languages
@@ -243,33 +247,17 @@ As a User from all different age groups and technical abilities I want the websi
     
 - ## **Testing**
 ------------
-+ ### Validating Testing
-    * #### HTML Validator
-        - HTML Results index.html <br>
-        [HTML Full Results - index.html][def65]
-        ![e][def71]
-        - HTML Results events.html <br>
-        [HTML Full Results - events.html][def66]
-        ![e][def72]
-        - HTML Results gallery.html <br>
-        [HTML Full Results - gallery.html][def67]
-        ![e][def73]
-        - HTML Results contact.html <br>
-        [HTML Full Results - contact.html][def68]
-        ![e][def71]
-        - HTML Results thankyou.html <br>
-        [HTML Full Results - thankyou.html][def69]
-        ![e][def71]
-    * #### CSS Validator
-        - CSS Results : [CSS Full Result][def70]
-        ![e][def71]
++ ### Validator Testing Results
+    ![Results][def6]
+    
     * #### Lighthouse Testing
-    At the first instance the results for performance were very low. Thereafter, on further analysis of it was identified that the image sizes were causing the issue therefore I used Shrink Media website to further compress the images used which resulted in better results.
+    At the first instance the results for performance were low at 83%. Thereafter, on further analysis of it was identified the image files and an extra bootstrap cdn were the LCP element and unused CSS respectively. I then changed the background image file to webp format as recommended on lighthouse dev tool and removed the earlier version cdn for bootstrap.
     Following are screen shots of Lighthouse analysis outcomes before repairs and after repairs
     - #### First Results 
+        ![First Result][def7]
         
-    - #### Results After Image Were Further Compressed
-        
+    - #### Final Results
+        ![Final Result][def8]
     * #### Test Cases and Results
    ![.][def16]
             
@@ -306,13 +294,13 @@ As a User from all different age groups and technical abilities I want the websi
 - ### Code
     * Code on how to present a modal and close was created with the help of a tutorial on [WebDevSimplified][def76].
     * Code for the hover effect on info cards on Home page was an play around with some examples from  [Codepen]
-    * I have used Bootstrap grid classes to implement structure on Events page.
-    * Responsive Photo gallery has been created using a tutorial on [Buy me a cofee]
+    * I have used Bootstrap grid classes to implement structure for the quiz.
+    * The basic logic for the quiz has been based on a tutorial by Avinash Kr from ![GreatStack][def21]
     * Hover effects on throughout has been created by using tutorials on [W3schools](https://www.w3schools.com/cssref/sel_hover.php)
 
 - ### Media
-    * [Favicon](./documentation/favicon.png) a vector art by ([Scigola](https://pixabay.com/vectors/symbol-om-religion-1537054/))
-    * [Background Image](./documentation/backgroundimage.png) is a image of Carina Nebula, NGC 3372 Hubble by ([NASA, ESA, N. Smith (University of California, Berkeley), and The Hubble Heritage Team (STScI/AURA);CTIO Image: N. Smith (University of California, Berkeley) and NOAO/AURA/NSF](https://hubblesite.org/contents/media/images/2007/16/2113-Image.html?news=true))
+    * ![Favicon][def1] a vector art by ([Scigola](https://pixabay.com/vectors/symbol-om-religion-1537054/))
+    * ![Background Image][def0] is a image of Carina Nebula, NGC 3372 Hubble by ([NASA, ESA, N. Smith (University of California, Berkeley), and The Hubble Heritage Team (STScI/AURA);CTIO Image: N. Smith (University of California, Berkeley) and NOAO/AURA/NSF](https://hubblesite.org/contents/media/images/2007/16/2113-Image.html?news=true))
     
 
 - ## Gratitude
@@ -325,12 +313,17 @@ As a User from all different age groups and technical abilities I want the websi
 
 
 
-[def28]: ./documentation/questionbox.png
-[def42]: /documentation/colorschemess.png
-[def64]: ./documentation/rightans.png
-[def74]: ./documentation/treaceabilitymatrix.png
-[def78]: ./documentation/menubar.png
 [Cdnfonts]: https://www.cdnfonts.com/samarkan.font
+[def0]: ./documentation/backgroundimage.png
+[def1]: ./documentation/favicon.png
+[def2]: #c-frequent-user-goals
+[def3]: #future-implementations
+[def4]: ./documentation/wireframe1.png
+[def5]: ./documentation/wireframe2.png
+[def6]: ./documentation/validatorresults.png
+[def7]: ./documentation/firstlighthouseresult.png
+[def8]: ./documentation/lighthousetesting2.png
+[def9]: https://fontawesome.com/
 [def10]: https://ashwinsel-milestone1-shxwdq7nqt6.ws-eu107.gitpod.io/
 [def11]: https://github.com/ashwinsel/Milestone-1.git
 [def12]: https://www.microsoft.com/en-gb/microsoft-365/powerpoint
@@ -341,13 +334,14 @@ As a User from all different age groups and technical abilities I want the websi
 [def17]: https://getbootstrap.com/
 [def18]: https://autoprefixer.github.io/
 [def19]: https://favicon.io/
-[def2]: #c-frequent-user-goals
 [def20]: https://validator.w3.org/
+[def21]: https://linktr.ee/iamavinashkr
 [def22]: https://ui.dev/amiresponsive?url=https://ashwinsel.github.io/Milestone-1/index.html
 [def23]: https://www.freeformatter.com/html-formatter.html
 [def24]: ./documentation/uirespsh.jpg
-[def3]: #future-implementations
-[def4]: ./documentation/wireframe1.png
+[def25]: ./documentation/flowchart.png
+[def28]: ./documentation/questionbox.png
+[def29]: /documentation/colorschemess.png
 [def42]: https://ashwinsel.github.io/Milestone-Project-2/
 [def43]: ./documentation/samarkanfont.png
 [def44]: ./documentation/spacemonofont.png
@@ -355,16 +349,17 @@ As a User from all different age groups and technical abilities I want the websi
 [def46]: ./documentation/backgroundimage.png
 [def47]: ./documentation/musiconoff.png
 [def49]: ./assets/images/favicon.png
-[def5]: ./documentation/wireframe2.png
 [def50]: ./documentation/reset.png
+[def64]: ./documentation/rightans.png
 [def65]: ./documentation/wrongans.png
 [def66]: ./documentation/nextbutton.png
 [def67]: ./documentation/scorebox.png
 [def68]: ./documentation/guidemodal.png
 [def69]: https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fashwinsel.github.io%2FMilestone-1%2F#textarea
 [def70]: https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fashwinsel.github.io%2FMilestone-1%2F#textarea
-[def71]: [def72]:
-[def73]: [def74]:
+[def74]: ./documentation/treaceabilitymatrix.png
 [def75]: https://www.jagranjosh.com/general-knowledge/gk-quiz-on-hindu-mythology-1706194424-1
 [def76]: https://courses.webdevsimplified.com/
-[def9]: https://fontawesome.com/
+[def78]: ./documentation/menubar.png
+
+
