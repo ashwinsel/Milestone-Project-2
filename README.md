@@ -192,7 +192,7 @@ As a User from all different age groups and technical abilities I want the websi
     * ##### F1.4 Question Box
         - The question box displays the question that is generated at random from a set of questions in the array.
 
-        ![Question Display Box][def28]
+        ![Question Display Box]
 
     * ##### F1.5 Answer option buttons x 4
         - The quiz presents users with four answer options to select from. Functionality is implemented such that choosing the correct answer results in the option turning green. Conversely, selecting an incorrect answer causes the chosen option to turn red, while the correct answer is highlighted in green.
@@ -311,6 +311,8 @@ As a User from all different age groups and technical abilities I want the websi
     * Hover effects on throughout has been created by using tutorials on [W3schools](https://www.w3schools.com/cssref/sel_hover.php)
 
 - ### Media
+    * [Favicon](./documentation/favicon.png) a vector art by ([Scigola](https://pixabay.com/vectors/symbol-om-religion-1537054/))
+    * [Background Image](./documentation/backgroundimage.png) is a image of Carina Nebula, NGC 3372 Hubble by ([NASA, ESA, N. Smith (University of California, Berkeley), and The Hubble Heritage Team (STScI/AURA);CTIO Image: N. Smith (University of California, Berkeley) and NOAO/AURA/NSF](https://hubblesite.org/contents/media/images/2007/16/2113-Image.html?news=true))
     
 
 - ## Gratitude
@@ -320,15 +322,15 @@ As a User from all different age groups and technical abilities I want the websi
 
 
 
+
+
+
+[def28]: ./documentation/questionbox.png
+[def42]: /documentation/colorschemess.png
+[def64]: ./documentation/rightans.png
+[def74]: ./documentation/treaceabilitymatrix.png
+[def78]: ./documentation/menubar.png
 [Cdnfonts]: https://www.cdnfonts.com/samarkan.font
-[def2]: #c-frequent-user-goals
-[def3]: #future-implementations
-[def4]: ./documentation/wireframe1.png
-[def5]: ./documentation/wireframe2.png
-[def6]: ./documentation/gallerypagewireframe.png
-[def7]: ./documentation/contactpagewireframe.png
-[def8]: ./documentation/thankyoupagewireframe.png
-[def9]: https://fontawesome.com/
 [def10]: https://ashwinsel-milestone1-shxwdq7nqt6.ws-eu107.gitpod.io/
 [def11]: https://github.com/ashwinsel/Milestone-1.git
 [def12]: https://www.microsoft.com/en-gb/microsoft-365/powerpoint
@@ -339,64 +341,30 @@ As a User from all different age groups and technical abilities I want the websi
 [def17]: https://getbootstrap.com/
 [def18]: https://autoprefixer.github.io/
 [def19]: https://favicon.io/
+[def2]: #c-frequent-user-goals
 [def20]: https://validator.w3.org/
-[def21]: ./documentation/homepagewireframe.png
 [def22]: https://ui.dev/amiresponsive?url=https://ashwinsel.github.io/Milestone-1/index.html
 [def23]: https://www.freeformatter.com/html-formatter.html
 [def24]: ./documentation/uirespsh.jpg
-[def25]: 
-[def26]: 
-[def27]: 
-[def28]: ./documentation/questionbox.png
-[def29]: 
-[def30]: 
-[def31]: 
-[def32]: 
-[def33]: 
-[def34]: 
-[def35]: 
-[def36]: 
-[def37]: 
-[def38]: 
-[def39]: 
-[def40]: 
-[def41]: 
-[def42]: ./documentation/colorschemess.png
-[def42]: https://ashwinsel.github.io/Milestone-Project-2/ "View Live Project Here"
+[def3]: #future-implementations
+[def4]: ./documentation/wireframe1.png
+[def42]: https://ashwinsel.github.io/Milestone-Project-2/
 [def43]: ./documentation/samarkanfont.png
 [def44]: ./documentation/spacemonofont.png
 [def45]: ./documentation/lugrasimofont.png
 [def46]: ./documentation/backgroundimage.png
 [def47]: ./documentation/musiconoff.png
-[def48]: ./assets/images/footer.jpg
 [def49]: ./assets/images/favicon.png
+[def5]: ./documentation/wireframe2.png
 [def50]: ./documentation/reset.png
-[def51]: 
-[def52]: 
-[def53]: 
-[def54]: 
-[def55]: 
-[def56]: 
-[def57]: 
-[def58]: 
-[def59]: 
-[def60]: 
-[def61]: 
-[def62]: 
-[def63]: 
-[def64]: ./documentation/rightans.png
 [def65]: ./documentation/wrongans.png
 [def66]: ./documentation/nextbutton.png
 [def67]: ./documentation/scorebox.png
 [def68]: ./documentation/guidemodal.png
 [def69]: https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fashwinsel.github.io%2FMilestone-1%2F#textarea
 [def70]: https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fashwinsel.github.io%2FMilestone-1%2F#textarea
-[def71]: 
-[def72]: 
-[def73]: 
-[def74]: ./documentation/treaceabilitymatrix.png
+[def71]: [def72]:
+[def73]: [def74]:
 [def75]: https://www.jagranjosh.com/general-knowledge/gk-quiz-on-hindu-mythology-1706194424-1
 [def76]: https://courses.webdevsimplified.com/
-[def77]: 
-[def78]: ./documentation/menubar.png
-[def79]: ./documentation/table2.png
+[def9]: https://fontawesome.com/
