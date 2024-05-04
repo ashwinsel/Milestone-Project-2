@@ -10,19 +10,20 @@ const resetButton = document.querySelector(".btn-reset");
 
 
 // Play the audio when the user clicks on Music Toggle button
-musicToggle.addEventListener("click", function () {
+musicToggle.addEventListener("click", function () {    
     if (music.paused) {
         // If the music is paused, start playing
         music.play().catch(error => {
             console.error("Failed to play music:", error);
         });
-        // Change the button text to indicate pausing
-        musicToggle.textContent = "Music On";
+        // Change the button text to indicate pausing+
+        musicToggle.innerHTML = '<i class="fa-solid fa-music"></i> Music On';
+        
     } else {
         // If the music is playing, pause it
         music.pause();
         // Change the button text to indicate resuming
-        musicToggle.textContent = "Music Off";
+        musicToggle.innerHTML = `<i class="fa-solid fa-volume-xmark"></i>Music Off`;
     }
 });
 
@@ -46,25 +47,6 @@ window.onclick = function (event) {
     if (event.target == howToPlay) {
         howToPlay.style.display = "none";
     }
-}
-
-// Reset Game function
-function resetGame() {
-    // Reset current question counter and score
-    currentQuestionCounter = 0;
-    score = 0;
-
-    // Show the first question
-    showQuestion();
-
-    // Remove any previous styling and enable answer buttons
-    for (let i = 0; i < answerButtons.length; i++) {
-        answerButtons[i].classList.remove("green", "red");
-        answerButtons[i].disabled = false;
-    }
-
-    // Hide the next button
-    nextButton.style.display = "none";
 }
 
 // The quiz script
@@ -290,7 +272,7 @@ function showQuestion() {
     }
     let questionDisplayed = question1[currentQuestionCounter];
     let questionNumber = questionNo + 1;
-    questions.innerHTML = `${questionNumber}. ${questionDisplayed.ques}`; // Display the Question with question number prefix
+    questions.innerHTML = `<i class="fa-solid fa-circle-question"></i> ${questionNumber}. ${questionDisplayed.ques}`; // Display the Question with question number prefix
     questionDisplayed.answers.forEach((answer, i) => {
         document.getElementById("option" + (i + 1)).innerHTML = answer.ans;
     }); // Display corresponding answers to the question displayed
@@ -356,6 +338,7 @@ function nextQuestion() {
     if (questionNo >= 10) {
         questions.innerHTML = `Your score is: ${score} / 10`;
         nextButton.style.display = "none"; // Hide next button
+        document.getElementsByClassName("question-box").classList.add("score");
         for (let i = 0; i < answerButtons.length; i++) {
             answerButtons[i].style.display = "none";
         }

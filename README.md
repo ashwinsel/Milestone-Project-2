@@ -176,6 +176,7 @@ As a User from all different age groups and technical abilities I want the websi
 - ### Quiz landing page
     * ##### F1.1 Guide
         - The "Guide" function serves as a navigational element within the user interface, denoted as a menu button. Upon activation, this button initiates the deployment of a modal interface, which in turn furnishes users with comprehensive instructional content outlining the how to participate in the quiz and explain all other features. Through these guidelines, the modal interface provides the steps to play the quiz to users, thereby enhancing their overall interactive experience within the quiz environment.
+
         ![Guide Button][def78]
 
     * ##### F1.2 Music Toggle Button
@@ -185,23 +186,36 @@ As a User from all different age groups and technical abilities I want the websi
 
     * ##### F1.3 Rest button
         - The "reset" button provides users the capability to reset the ongoing quiz at their discretion, thereby resetting the score to zero and initiating the quiz anew from question number 1. The randomized nature of question selection, ensures that subsequent quiz attempts commence with a fresh set of questions and so gives users a better experience.
+
         ![Reset Button][def50]
         
     * ##### F1.4 Question Box
         - The question box displays the question that is generated at random from a set of questions in the array.
+
         ![Question Display Box][def28]
 
     * ##### F1.5 Answer option buttons x 4
         - The quiz presents users with four answer options to select from. Functionality is implemented such that choosing the correct answer results in the option turning green. Conversely, selecting an incorrect answer causes the chosen option to turn red, while the correct answer is highlighted in green.
+
         ![Right Answer][def64] ![Wrong Answer][def65]
 
     * ##### F1.6 Next Button
         - The Next button is not visible until the user has clicked on an answer, therefore limiting the user to proceed without answering a question. User can click on the next button to proceed to the next question. When the next question is displayed the "Next" button disappears again until an answer is clicked upon.
+
         ![Next Button][def66]
 
     * ##### F1.7 Score Display Box
-        - The Next 
+        - The score display box should appear at the end of 10 attempted questions and when the ""next"" button is clicked.
+        The score should be displayed in the format your score is no. of right answer / total number of questions.
+        
         ![Score Display][def67]
+
+    * ##### F1.8 Instructions Modal
+        - A modal interface appears providing comprehensive instructional content on how to participate in the quiz and explaining other features. Users should be guided through the steps to play the quiz, enhancing their overall interactive experience within the quiz environment. When the user clicks on the x mark it closes the modal.
+
+        ![Instructions Modal][def68]
+
+    
 
 ------------            
 - ### Traceability Matrix
@@ -212,7 +226,7 @@ As a User from all different age groups and technical abilities I want the websi
 + ### Languages
     * #### HTML5
     * #### CSS3
-    * #### Javascript (not by the student but code embedded in libraries used)
+    * #### Javascript
 + ### Frameworks, Libraries and Programs Used
     * #### [Cdnfonts][Cdnfonts] : was used to import Samarkan fonts into style.css file which has been used in the Main Logo title.
     * #### [Font Awesome][def9] : was used to add icons for aesthetic and UX purposes. Icons have been used to for social media links which can be easily identified by users regarless of their English language level. Icons have also been used on events page to depict type of event.
@@ -377,14 +391,14 @@ As a User from all different age groups and technical abilities I want the websi
 [def64]: ./documentation/rightans.png
 [def65]: ./documentation/wrongans.png
 [def66]: ./documentation/nextbutton.png
-[def67]: https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fashwinsel.github.io%2FMilestone-1%2F#textarea
-[def68]: https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fashwinsel.github.io%2FMilestone-1%2F#textarea
+[def67]: ./documentation/scorebox.png
+[def68]: ./documentation/guidemodal.png
 [def69]: https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fashwinsel.github.io%2FMilestone-1%2F#textarea
 [def70]: https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fashwinsel.github.io%2FMilestone-1%2F#textarea
 [def71]: ./documentation/homevalresult.jpg
 [def72]: ./documentation/eventvalresult.png
 [def73]: ./documentation/galleryvalresult.png
-[def74]: ./documentation/table1.png
+[def74]: ./documentation/treaceabilitymatrix.png
 [def75]: https://codepen.io/wikyware-net/pen/abwVORa
 [def76]: https://www.buymeacoffee.com/tech2etc
 [def77]: https://www.vecteezy.com/members/graphicsrf

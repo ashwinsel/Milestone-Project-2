@@ -115,8 +115,7 @@ main.container-fluid {
   border: 1px solid #000000;
   overflow: hidden;
   position: relative;
-  padding: 2%;
-  /* Adjusted for shorthand */
+  padding: 2%;  
 }
 
 .question-box {
@@ -127,6 +126,15 @@ main.container-fluid {
   font-family: "Space Mono", monospace, Arial, Helvetica, sans-serif;
   font-weight: 400;
   height: 10vh;
+}
+
+/* class to display score */
+.score {
+  font-weight: 700;
+  font-size: xx-large;
+  height: 10vh;
+  margin-top: 10%;
+  width: fit-content;
 }
 
 /** Stylize the answer option buttons and classes that are to be applied based on user interaction **/
