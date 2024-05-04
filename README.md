@@ -33,55 +33,35 @@ Overall, the user experience has been designed to be interactive and engaging, w
         - [Typography](#typography)
         - [Imagery](#imagery)
 + [Features](#features)
-    * [Home Page Features](#home-page-features)
-        - [F1.1 Navigation Bar](#f11-navigation-bar)
-        - [F1.2 Landing Page](#f12-landing-page)
-        - [F1.3 Information Cards](#f13-information-cards)
-        - [F1.4 Footer](#f14-footer)
-    * [Events Page Features](#events-page-features)
-        - [F2.1 Navigation Bar](#f21-navigation-bar)
-        - [F2.2 Event Details](#f22-event-1)
-        - [F2.3 Event Details](#f23-event-2)
-        - [F2.4 Footer](#f24-footer)
-    * [Gallery Page Features](#gallery-page-features)
-        - [F3.1 Navigation Bar](#f31-navigation-bar)
-        - [F3.2 Event Title](#f32-event-title)
-        - [F3.3 Photograph Grid](#f33-photograph-grid)
-        - [F3.4 Event Title](#f34-event-title)
-        - [F3.5 Photograph Grid](#f35-photograph-grid)
-        - [F3.6 Event Title](#f36-event-title)
-        - [F3.7 Photograph Grid](#f37-photograph-grid)
-        - [F3.8 Footer](#f38-footer)
-    * [Contact Page Features](#contact-page-features)
-        - [F4.1 Navigation Bar](#f41-navigation-bar)
-        - [F4.2 Contact Form](#f42-contact-form)
-        - [F4.3 Flipped Hero Image](#f43-flipped-hero-image)
-        - [F4.4 Footer](#f44-footer)
-    * [Thank You Page Features](#thank-you-page-features)
-        - [F5.1 Navigation Bar](#f51-navigation-bar)
-        - [F5.2 Confirmation Message](#f52-confirmation-message)
-        - [F5.3 Flipped Hero Image](#f53-flipped-hero-image)
-        - [F5.4 Footer](#f54-footer)
-    * [Traceability Matrix](#traceability-matrix)
+    * [Quiz Landing Page](#quiz-landing-page)
+        - [F1.1 Guide](#f11-guide)
+        - [F1.2 Music Toggle Button](#f12-music-toggle-button)
+        - [F1.3 Reset Button](#f13-reset-button)
+        - [F1.4 Question Box](#f14-question-box)
+        - [F1.5 Answer option buttons x 4](#f15-answer-option-buttons-x-4)    
+        - [F1.6 Next Button](#f21-next-button)
+        - [F1.7 Score Display Box](#f17-score-display-box)
+        - [F1.8 Instructions MOdal](#f18-instructions-modal)       
++ [Traceability Matrix](#traceability-matrix)
++ [Logic](#logic)
 + [Technologies Used](#technologies-used)
     * [Languages Used](#languages-used)
     * [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
 + [Testing](#testing)
-    * [Validator Testing](#validator-testing)
-         - [HTML Validator](#html-validator)
-            - [HTML Results index.html](#html-results-indexhtml)
-            - [HTML Results events.html](#html-results-eventshtml)
-            - [HTML Results gallery.html](#html-results-galleryhtml)
-            - [HTML Results contact.html](#html-results-contacthtml)
-            - [HTML thankyou.html](#html-results-thankyouhtml)
-         - [CSS Validator](#css-validator)
-            - [CSS Results](#css-results)
+    * [Validator Testing Results](#validator-testing-results)
+        
     * [Lighthouse Testing](#lighthouse-testing)
-        - [Results](#results)
-        - [Repairs to Optimize](#repairs-to-optimize)
+        - [First Results](#first-results)
+        - [Final Results](#final-results)
++ [Test Cases and Results](#test-cases-and-results)
++ [Responsiveness Testing Results](#responsiveness-testing-results)
++ [BUgs and Fixes](#bugs-and-fixes)
 + [Browser Compatibility](#browser-compatibility)
 + [Deployment and Cloning](#deployment-and-cloning)
 + [Credits](#credits)
+    * [Content](#content)
+    * [Code](#code)
+    * [Media](#media)
 + [Gratitude](#gratitude)
 
 ## **User Experience (UX)**
@@ -115,18 +95,18 @@ As a User from all different age groups and technical abilities I want the websi
 ------------
 - ### **Strategy**
     * Create an engaging experience offers user an opportunity to delve into the depths of Hindu mythology and usrs can test their knowledge in an interactive manner.
-+ #### Project Goals
+    + #### Project Goals
     * The primary goal is to provide an engaging and educational experience to users through the Hindu Mythology Quiz. This involves creating an interactive platform where users can test their knowledge of Hindu mythology while enjoying an immersive experience.
-+ #### Customer Goals
+    + #### Customer Goals
     * The focus is on meeting the needs of users, both first-time visitors and returning users. This includes providing clear instructions on how to play the quiz, offering options to toggle background music, ensuring ease of navigation, and delivering an enriching adventure through challenging and entertaining questions.
     * Being able to access all devices.
-+ #### Company Goals
+    + #### Company Goals
     * To have an online presence.
     * The aim is to create a quiz platform that reflects the depth and richness of Hindu mythology while ensuring accessibility and inclusivity for all users. 
     * Additionally, the company seeks to foster user engagement and satisfaction through an interactive and seamless user experience.
-+ #### Future Implementations
+    + #### Future Implementations
     * There is a potential for future enhancements to the quiz platform, such as expanding the question database, incorporating multimedia elements like images or videos, introducing leaderboards or scoring systems, and integrating social sharing features to encourage user interaction and participation. Provide access to additional content or links in the footer section for further exploration.
-- ### Scope
+- ### **Scope**
     - The scope of the Hindu Mythology Quiz encompasses creating a user-friendly and accessible web interface that allows users to:
         * Easily understand how to play the quiz through clear instructions and intuitive design.
         * Toggle background music on or off according to their preference.
@@ -135,20 +115,20 @@ As a User from all different age groups and technical abilities I want the websi
         * Identify question boxes and answer options clearly, ensuring a seamless user experience.
         * Distinguish between correct and incorrect answers easily, enhancing user engagement and satisfaction.
         * Access additional content or links in the footer section for further exploration and learning.
-- ### Structure
+- ### **Structure**
     - The structure of the Hindu Mythology Quiz is designed to provide a logical flow for users, starting from the homepage and progressing through the quiz experience. Key structural elements include:
 
         * Header Section: Contains the title of the quiz and a menu bar with buttons for accessing the guide, toggling background music, and resetting the game.
         * Main Section: Features the question box and answer option boxes, allowing users to interact with the quiz content.
         * Modal Window (Guide): Provides detailed instructions on how to play the quiz, ensuring clarity for users.
         * Footer Section: Currently empty but open for future content or links to enhance user engagement and exploration.
-- ### Skeleton
+- ### **Skeleton**
     + #### Wireframes
         * ##### Quiz Layout Wireframes
             ![Home Page Wireframe][def4]
         * ##### Score Wireframe
             ![Events Page Wireframe][def5]                    
-- ### Surface
+- ### **Surface**
     + #### Colour Scheme
         * I have used a rusted copper ztar color palette consistent with the backgoruns image of a ethereal astronomical image.
         * #0C3D40 a shade of dark green, black, and a dark rusty font colors play a good contrast to the chosen colour palette.
@@ -184,7 +164,7 @@ As a User from all different age groups and technical abilities I want the websi
         
         ![Music Toggle Button][def47]
 
-    * ##### F1.3 Rest button
+    * ##### F1.3 Reset button
         - The "reset" button provides users the capability to reset the ongoing quiz at their discretion, thereby resetting the score to zero and initiating the quiz anew from question number 1. The randomized nature of question selection, ensures that subsequent quiz attempts commence with a fresh set of questions and so gives users a better experience.
 
         ![Reset Button][def50]
@@ -225,7 +205,7 @@ As a User from all different age groups and technical abilities I want the websi
 ------------    
 - ## **Technologies Used**
 ------------
-+ ### Languages
++ ### Languages Used
     * #### HTML5
     * #### CSS3
     * #### Javascript
@@ -363,8 +343,10 @@ As a User from all different age groups and technical abilities I want the websi
 
 - ## Gratitude
     * I would like to thank my mentor Dick Vlaanderen for all the coaching and helping me with their insight and experience.
-    * thanks to tutor Jason, who helped me arrange folders within my repository and ensure my deployment worked well.
+    * Thanks to tutor Roo, who helped me fix my deployment.
     * Thank you to Md—Fahim Kabir Hamim for the lessons on Tech2 etc.
+    * Thanks to tutors from Great Stck.
+    * Thanks to Amy our facilitator for running our regular Stand-ups which gave me confidence.
 
 
 
