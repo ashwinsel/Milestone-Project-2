@@ -74,8 +74,9 @@ div#instructions.modal {
 }
 
 button.btn {
-  color: #ea070b;
-  font-family: small "Lugrasimo", cursive, Arial, Helvetica, sans-serif;
+  color: #66CCCC;
+  font-family: "Lugrasimo", cursive, Arial, Helvetica, sans-serif;
+  font-size: small;
 }
 
 span.close {
@@ -155,6 +156,10 @@ p.ans {
   cursor: pointer;
 }
 
+.ans:hover {
+  background-color: rgba(230, 220, 200, 0.6);
+}
+
 .green {
   background-color: green;
 }
@@ -194,6 +199,11 @@ p.ans {
   width: 42%;
   cursor: pointer;
 }
+
+#next:hover {
+  
+    background-color: rgba(230, 220, 200, 0.6);
+  }
 
 /* Styling for responsive UX */
 
@@ -265,6 +275,11 @@ p.ans {
     margin-bottom: -3.5rem;
 
   }
+  button.btn {
+    color: #66CCCC;
+    font-family: "Lugrasimo", cursive, Arial, Helvetica, sans-serif;
+    font-size: xx-small;
+}
 }
 
 /* For very small screen */
@@ -279,4 +294,5 @@ p.ans {
     margin-left: 0%;
     height: fit-content;
   }
+  
 }

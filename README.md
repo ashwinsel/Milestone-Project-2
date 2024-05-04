@@ -102,7 +102,7 @@ As a User from all different age groups and technical abilities I want the websi
     1. As a returning visitor, I want to quickly access the instructions on how to play the quiz.
     2. As a returning visitor, I want to have the option to toggle background music on or off based on my preference.
     3. As a returning visitor, I want to have a smooth and seamless experience navigating through the quiz interface.
-    4. As a returning visitor, I want to be able to enjoy the background music without it being distracting.
+    4. As a returning visitor, I want to be able to turn off the background music if it is distracting.
     5. As a returning visitor, I want to be able to easily understand the purpose of each button in the menu bar.
 
 -   #### C. Frequent User Goals
@@ -110,7 +110,7 @@ As a User from all different age groups and technical abilities I want the websi
     2. As a frequent user, I want to be able to customize the quiz settings, such as the background music.
     3. As a frequent user, I want to be able to reset the game easily if needed.
     4. As a frequent user, I want to have a pleasant and engaging experience while answering questions by having new and random questions without them repeating.
-    5. As a frequent user, I want to have access to additional content or links in the footer section for further exploration.
+    
 ## **UX Planes**
 ------------
 - ### **Strategy**
@@ -125,7 +125,7 @@ As a User from all different age groups and technical abilities I want the websi
     * The aim is to create a quiz platform that reflects the depth and richness of Hindu mythology while ensuring accessibility and inclusivity for all users. 
     * Additionally, the company seeks to foster user engagement and satisfaction through an interactive and seamless user experience.
 + #### Future Implementations
-    * There is a potential for future enhancements to the quiz platform, such as expanding the question database, incorporating multimedia elements like images or videos, introducing leaderboards or scoring systems, and integrating social sharing features to encourage user interaction and participation.
+    * There is a potential for future enhancements to the quiz platform, such as expanding the question database, incorporating multimedia elements like images or videos, introducing leaderboards or scoring systems, and integrating social sharing features to encourage user interaction and participation. Provide access to additional content or links in the footer section for further exploration.
 - ### Scope
     - The scope of the Hindu Mythology Quiz encompasses creating a user-friendly and accessible web interface that allows users to:
         * Easily understand how to play the quiz through clear instructions and intuitive design.
@@ -213,9 +213,7 @@ As a User from all different age groups and technical abilities I want the websi
     * ##### F1.8 Instructions Modal
         - A modal interface appears providing comprehensive instructional content on how to participate in the quiz and explaining other features. Users should be guided through the steps to play the quiz, enhancing their overall interactive experience within the quiz environment. When the user clicks on the x mark it closes the modal.
 
-        ![Instructions Modal][def68]
-
-    
+        ![Instructions Modal][def68]    
 
 ------------            
 - ### Traceability Matrix
@@ -229,15 +227,14 @@ As a User from all different age groups and technical abilities I want the websi
     * #### Javascript
 + ### Frameworks, Libraries and Programs Used
     * #### [Cdnfonts][Cdnfonts] : was used to import Samarkan fonts into style.css file which has been used in the Main Logo title.
-    * #### [Font Awesome][def9] : was used to add icons for aesthetic and UX purposes. Icons have been used to for social media links which can be easily identified by users regarless of their English language level. Icons have also been used on events page to depict type of event.
+    * #### [Font Awesome][def9] : was used to add icons for aesthetic and UX purposes. Icons have been used to for guide and music toggle button which can be easily identified by users regarless of their English language level. Icon has also been used for prefix to questions to make the quiz look more playfull.
     * #### [Git][def10]: was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub.
     * #### [GitHub][def11] : It is used as the repository for the project's code after being pushed from Git.
     * #### [Powerpoint][def12] : was used for resizing images and editing photos and screenshots for Readme. It is also used for designing flyers for event pages.
     * #### [Balsamiq][def13] : was used to create the wireframes during the design process.
-    * #### [Coolors][def14] : was used to find complimenting colors to saffron for the website color palette.
-    * #### [TinyPng][def15] : was used to compress the images that are used in the website, especially on the gallery page.
-    * #### [ShrinkMedia by PixelBin.io][def16] : has been used to compress further and resize the images used on the website.
-    * #### [Bootstrap][def17] : codes from Bootsrap grid html and Css library has been used in the events.html page to align the coontent in columns and rows.
+    * #### [Coolors][def14] : was used to find complimenting colors to the backgorund image for the website color palette.
+    * #### [TinyPng][def15] : was used to compress the images that are used in the website, especially on the gallery page.     
+    * #### [Bootstrap][def17] : codes from Bootsrap grid html and Css library has been used to design the Question and answers section to have a responsive quiz layout in columns and rows.
     * #### [Autoprefixer CSS online][def18] : has been used to parse the CSS in style.css to add different browser prefixes to ensure the CSS works on all browsers.
     * #### [favicon.io][def19] : was used to generate the favicon for the website.
     * #### [W3C Markup Validation Service][def20] : has been used to validate the code on all pages and style.css.
@@ -274,6 +271,7 @@ As a User from all different age groups and technical abilities I want the websi
     - #### Results After Image Were Further Compressed
         
     * #### Test Cases and Results
+   ![.][def16]
             
 
 - ## Browser Compatibility
@@ -282,22 +280,20 @@ As a User from all different age groups and technical abilities I want the websi
     - Chrome Version 120.0.6099.225 (Official Build) (64-bit)
     - Firefox Version 122.0 (64-bit)
     - Edge Version 121.0.2277.83 (Official build) (64-bit)
+    All the functionalities and appearance works as intended on all the above browsers.
 
 - ## Deployment and Cloning
 ------------- 
 + Deployment:
 
-    *   In the GitHub repository, navigate to the Settings tab, then choose Pages from the left hand menu
-
+    * In the GitHub repository, navigate to the Settings tab, then choose Pages from the left hand menu
     * Ensure the source section drop down menu is set to the Main Branch
-
     * Refresh the page and a link to access the page will appear at the top with an option next to it that says "visit page"
-
     * Any changes pushed to the master branch will take effect on the live project
 
 + Cloning:
 
-    * visit url - https://github.com/ashwinsel/Milestone-1 this will open the repository on Github
+    * visit url - https://github.com/ashwinsel/Milestone-Project-2 this will open the repository on Github
     * Click on the "Code" green coloured button to the right of the screen, click HTTPs and copy the link there
     * Open a GitBash terminal and navigate to the directory where you want to locate the clone
     * On the command line, type "git clone" then paste in the copied url and press the Enter key to begin the clone process
@@ -305,13 +301,13 @@ As a User from all different age groups and technical abilities I want the websi
 - ## Credits
 ------------
 - ### Content
-    * Some of my content on the main page such as 'About Us' is roughly based on Maharashtra Mandal London website.
+    * Most of the question and answers are adapted from jagranJosh website [JagranJosh][def75]
     * All other content has been drafted by the developer.
 - ### Code
-    * Code on how to present a 'Call-out' text in front of the Hero Image (on home page, Contact us page) and has been adapted from the Thrive project by Elaine Broche.
-    * Code for the hover effect on info cards on Home page was an play around with some examples from  [Codepen][def75]
+    * Code on how to present a modal and close was created with the help of a tutorial on [WebDevSimplified][def76].
+    * Code for the hover effect on info cards on Home page was an play around with some examples from  [Codepen]
     * I have used Bootstrap grid classes to implement structure on Events page.
-    * Responsive Photo gallery has been created using a tutorial on [Buy me a cofee][def76]
+    * Responsive Photo gallery has been created using a tutorial on [Buy me a cofee]
     * Hover effects on throughout has been created by using tutorials on [W3schools](https://www.w3schools.com/cssref/sel_hover.php)
 
 - ### Media
@@ -339,7 +335,7 @@ As a User from all different age groups and technical abilities I want the websi
 [def13]: https://balsamiq.com/
 [def14]: https://coolors.co/
 [def15]: https://tinypng.com/
-[def16]: https://www.shrink.media/upload
+[def16]: ./documentation/testcasesandresults.png
 [def17]: https://getbootstrap.com/
 [def18]: https://autoprefixer.github.io/
 [def19]: https://favicon.io/
@@ -348,23 +344,23 @@ As a User from all different age groups and technical abilities I want the websi
 [def22]: https://ui.dev/amiresponsive?url=https://ashwinsel.github.io/Milestone-1/index.html
 [def23]: https://www.freeformatter.com/html-formatter.html
 [def24]: ./documentation/uirespsh.jpg
-[def25]: ./documentation/eventsscreenshot.png
-[def26]: ./documentation/galleryscreenshot.png
-[def27]: ./documentation/contactscreenshot.png
+[def25]: 
+[def26]: 
+[def27]: 
 [def28]: ./documentation/questionbox.png
-[def29]: ./documentation/1lhhome.png
-[def30]: ./documentation/1lhcontact.png
-[def31]: ./documentation/1lhgallery.png
-[def32]: ./documentation/1lhevent.png
-[def33]: ./documentation/1lhthankyou.png
-[def34]: ./documentation/lheventpage.png
-[def35]: ./documentation/lhhomepage.png
-[def36]: ./documentation/lhgallerypage.png
-[def37]: ./documentary/lhgallerypage1.png
-[def38]: ./documentary/lhgallerypage2.png
-[def39]: ./documentation/lhcontactpage.png
-[def40]: ./documentation/lhthankyoupage.png
-[def41]: ./documentation/thankyouscreenshot.png
+[def29]: 
+[def30]: 
+[def31]: 
+[def32]: 
+[def33]: 
+[def34]: 
+[def35]: 
+[def36]: 
+[def37]: 
+[def38]: 
+[def39]: 
+[def40]: 
+[def41]: 
 [def42]: ./documentation/colorschemess.png
 [def42]: https://ashwinsel.github.io/Milestone-Project-2/ "View Live Project Here"
 [def43]: ./documentation/samarkanfont.png
@@ -375,19 +371,19 @@ As a User from all different age groups and technical abilities I want the websi
 [def48]: ./assets/images/footer.jpg
 [def49]: ./assets/images/favicon.png
 [def50]: ./documentation/reset.png
-[def51]: ./documentation/homefeat.png
-[def52]: ./documentation/events1.png
-[def53]: ./documentation/footerss.png
-[def54]: ./documentation/homefeat1.png
-[def55]: ./documentation/events2.png
-[def56]: ./documentation/eventtitle1.png
-[def57]: ./documentation/photogrid1.png
-[def58]: ./documentation/eventtitle2.png
-[def59]: ./documentation/photogrid2.png
-[def60]: ./documentation/photogrid3.png
-[def61]: ./documentation/eventtitle3.png
-[def62]: ./documentation/contactcallout.png
-[def63]: ./documentation/himage2.png
+[def51]: 
+[def52]: 
+[def53]: 
+[def54]: 
+[def55]: 
+[def56]: 
+[def57]: 
+[def58]: 
+[def59]: 
+[def60]: 
+[def61]: 
+[def62]: 
+[def63]: 
 [def64]: ./documentation/rightans.png
 [def65]: ./documentation/wrongans.png
 [def66]: ./documentation/nextbutton.png
@@ -395,12 +391,12 @@ As a User from all different age groups and technical abilities I want the websi
 [def68]: ./documentation/guidemodal.png
 [def69]: https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fashwinsel.github.io%2FMilestone-1%2F#textarea
 [def70]: https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2Fashwinsel.github.io%2FMilestone-1%2F#textarea
-[def71]: ./documentation/homevalresult.jpg
-[def72]: ./documentation/eventvalresult.png
-[def73]: ./documentation/galleryvalresult.png
+[def71]: 
+[def72]: 
+[def73]: 
 [def74]: ./documentation/treaceabilitymatrix.png
-[def75]: https://codepen.io/wikyware-net/pen/abwVORa
-[def76]: https://www.buymeacoffee.com/tech2etc
-[def77]: https://www.vecteezy.com/members/graphicsrf
+[def75]: https://www.jagranjosh.com/general-knowledge/gk-quiz-on-hindu-mythology-1706194424-1
+[def76]: https://courses.webdevsimplified.com/
+[def77]: 
 [def78]: ./documentation/menubar.png
 [def79]: ./documentation/table2.png
