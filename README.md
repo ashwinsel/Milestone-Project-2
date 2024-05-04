@@ -261,6 +261,53 @@ As a User from all different age groups and technical abilities I want the websi
     * #### Test Cases and Results
    ![.][def16]
             
+- ## Bugs and Fixes
+------------
+* Score always exceeded the number of questions.
+ - To fix this I console logged the clicked button event and the score event.
+ - Based on the results on DOM it was obvious that even after the user has clicked on the chosen answer the code was allowing further clicks but this was invisible on the page as once a class was added to the div it was returning event listner events.
+ - This was fixed by applying a specific id to each div and then calling each id.
+
+* Instructions Modal was floating towards the top regardless of the applied CSS styling.
+ - Further investigation on the developer tools I identifieds that the bootstrap and some template css were over-riding my styling.
+ - This was then easy to fix by targetting the element specifically and applying !important 
+
+* Reset Button was dissapearing when clicked on x to close guide modal
+ - this was an easy fix by removing it out of modal class and removing the initial code that was causing a ghost modal to open and therefore clicking it was disabling the button itself.
+ - This debugging also revealed that there were multiple event listners to reset button which was rectified.
+
+* Music did not autoplay even though there was relevant attributes added.
+ - This could not be fixed for some browsers as some of them had extensions that could stop running.
+ - Reading up on codepen and W3schools this was fixed to show error if browser couldn't read the music.
+ - Added afeature to be able to turn on music once the page is loaded.
+
+* After the user has chosen the answer the right answer was not getting applied the style
+ - By console.logging the elements that were being compared to check for right answer it was clear that the 
+ ansArray.forEach(function(obj, c){
+        if (obj.result === true){            
+        rightAns = ansArray[c].ans;
+        }       
+        was returning an undefined value to dom
+ - Also, I was targetyting the wrong elemet  evt.target.classList.add("green"); instead of the actual element. I learned that it is best to assign variables a name that is recognisable rather than "x" and will be apllied in future projects.
+- This was then easily fixed by applying a loop to find the target div containing the right answer and then applying the class to the element  x.classList.add("green");.
+
+* Score was doubling up again 
+ - Realised that the element wasn't getting disabled again due to targetting the wrong element this was fixed by  x.style.button = "disable"; using the x variable to ensure I am targetting the right elements to be disabled.
+ - The asnwer buttons also had two different event listners this is due me mis-understanding the event listener lesson. 
+
+* After establishing a proper working quiz, I wanted to improve the user experience so I wanted to add few more questions and randomly pick question-answer set from the array.
+ - I used the Math.floor(Math.random()) function to generate the random question number.
+ - I was stuck for a while at this juncture as I couldn't get the intended result.
+ - However, the console.logging the various variables and const I realised at some point the during the iterations there was always a point that returned either 0 or a number equal to the array length.
+ - Once I figured out the problem I could fix it with a simple loop and break method to check the question counter before it was fed to the show question function to obtain array object at the non-existant index.
+
+*  Score was doubling Bug
+ - I used the sources feature in dev tools to resolve this.
+ - stopping the function at the score calculating code.
+ - This was then fixed by adding a separate counter to count the number of questions.
+
+* Next button was extending accross the screen.
+ - This was an easy fix at CSS level.
 
 - ## Browser Compatibility
 ------------
