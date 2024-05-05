@@ -161,11 +161,11 @@ p.ans {
 }
 
 .green {
-  background-color: green;
+  background-color: green !important;
 }
 
 .red {
-  background-color: #ea070b;
+  background-color: #ea070b !important;
 }
 
 #option1,
@@ -269,6 +269,7 @@ p.ans {
     height: fit-content;
   }
 
+
   .container {
     font-size: 236%;
     margin-left: 25px;
@@ -294,5 +295,6 @@ p.ans {
     margin-left: 0%;
     height: fit-content;
   }
+
   
 }
